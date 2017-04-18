@@ -1,0 +1,1243 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第二章：词法作用域 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch3.html" />
+    
+    
+    <link rel="prev" href="ch1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface.html">
+            
+                <a href="../preface.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../up/">
+            
+                <a href="../up/">
+            
+                    
+                    入门与进阶(up & going)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../up/toc.html">
+            
+                <a href="../up/toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../up/foreword.html">
+            
+                <a href="../up/foreword.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../up/ch1.html">
+            
+                <a href="../up/ch1.html">
+            
+                    
+                    第一章：进入编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../up/ch2.html">
+            
+                <a href="../up/ch2.html">
+            
+                    
+                    第二章：进入JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../up/ch3.html">
+            
+                <a href="../up/ch3.html">
+            
+                    
+                    第三章：进入YDKJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../up/apA.html">
+            
+                <a href="../up/apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    作用域与闭包(scope & closures)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="toc.html">
+            
+                <a href="toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    第一章：什么是作用域？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    第二章：词法作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    第三章：函数与块儿作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    第四章：提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    第五章：作用域闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    附录C
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="apD.html">
+            
+                <a href="apD.html">
+            
+                    
+                    附录D
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../this/">
+            
+                <a href="../this/">
+            
+                    
+                    this与对象原型(this & object prototypes)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../this/toc.html">
+            
+                <a href="../this/toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../this/foreword.html">
+            
+                <a href="../this/foreword.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../this/ch1.html">
+            
+                <a href="../this/ch1.html">
+            
+                    
+                    第一章: this是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../this/ch2.html">
+            
+                <a href="../this/ch2.html">
+            
+                    
+                    第二章: this豁然开朗！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../this/ch3.html">
+            
+                <a href="../this/ch3.html">
+            
+                    
+                    第三章: 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../this/ch4.html">
+            
+                <a href="../this/ch4.html">
+            
+                    
+                    第四章: 混合（淆）“类”的对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../this/ch5.html">
+            
+                <a href="../this/ch5.html">
+            
+                    
+                    第五章: 原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../this/ch6.html">
+            
+                <a href="../this/ch6.html">
+            
+                    
+                    第六章: 行为委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../this/apA.html">
+            
+                <a href="../this/apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../this/apB.html">
+            
+                <a href="../this/apB.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../types/">
+            
+                <a href="../types/">
+            
+                    
+                    类型与文法(types & grammar)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../types/toc.html">
+            
+                <a href="../types/toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../types/foreword.html">
+            
+                <a href="../types/foreword.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../types/ch1.html">
+            
+                <a href="../types/ch1.html">
+            
+                    
+                    第一章：类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../types/ch2.html">
+            
+                <a href="../types/ch2.html">
+            
+                    
+                    第二章：值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../types/ch3.html">
+            
+                <a href="../types/ch3.html">
+            
+                    
+                    第三章：原生类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../types/ch4.html">
+            
+                <a href="../types/ch4.html">
+            
+                    
+                    第四章：强制转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../types/ch5.html">
+            
+                <a href="../types/ch5.html">
+            
+                    
+                    第五章：文法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../types/apA.html">
+            
+                <a href="../types/apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../types/apB.html">
+            
+                <a href="../types/apB.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../async/">
+            
+                <a href="../async/">
+            
+                    
+                    异步与性能(async & performance)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../async/toc.html">
+            
+                <a href="../async/toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../async/foreword.html">
+            
+                <a href="../async/foreword.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../async/ch1.html">
+            
+                <a href="../async/ch1.html">
+            
+                    
+                    第一章: 异步:现在与稍后
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../async/ch2.html">
+            
+                <a href="../async/ch2.html">
+            
+                    
+                    第二章: 回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../async/ch3.html">
+            
+                <a href="../async/ch3.html">
+            
+                    
+                    第三章: Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../async/ch4.html">
+            
+                <a href="../async/ch4.html">
+            
+                    
+                    第四章: Generator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../async/ch5.html">
+            
+                <a href="../async/ch5.html">
+            
+                    
+                    第五章: 程序性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../async/ch6.html">
+            
+                <a href="../async/ch6.html">
+            
+                    
+                    第六章: 基准分析与调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../async/apA.html">
+            
+                <a href="../async/apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../async/apB.html">
+            
+                <a href="../async/apB.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../async/apC.html">
+            
+                <a href="../async/apC.html">
+            
+                    
+                    附录C
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../es6/">
+            
+                <a href="../es6/">
+            
+                    
+                    ES6与未来(es6 & beyond)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../es6/toc.html">
+            
+                <a href="../es6/toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../es6/foreword.html">
+            
+                <a href="../es6/foreword.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../es6/ch1.html">
+            
+                <a href="../es6/ch1.html">
+            
+                    
+                    第一章：ES？现在与未来
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../es6/ch2.html">
+            
+                <a href="../es6/ch2.html">
+            
+                    
+                    第二章：语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../es6/ch3.html">
+            
+                <a href="../es6/ch3.html">
+            
+                    
+                    第三章：组织
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../es6/ch4.html">
+            
+                <a href="../es6/ch4.html">
+            
+                    
+                    第四章：异步流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../es6/ch5.html">
+            
+                <a href="../es6/ch5.html">
+            
+                    
+                    第五章：集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../es6/ch6.html">
+            
+                <a href="../es6/ch6.html">
+            
+                    
+                    第六章：新增API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../es6/ch7.html">
+            
+                <a href="../es6/ch7.html">
+            
+                    
+                    第七章：元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../es6/ch8.html">
+            
+                <a href="../es6/ch8.html">
+            
+                    
+                    第八章：ES6以后
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../es6/apA.html">
+            
+                <a href="../es6/apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第二章：词法作用域</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4F60;&#x4E0D;&#x61C2;js&#xFF1A;&#x4F5C;&#x7528;&#x57DF;&#x4E0E;&#x95ED;&#x5305;">&#x4F60;&#x4E0D;&#x61C2;JS&#xFF1A;&#x4F5C;&#x7528;&#x57DF;&#x4E0E;&#x95ED;&#x5305;</h1>
+<h1 id="&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;">&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;</h1>
+<p>&#x5728;&#x7B2C;&#x4E00;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x201C;&#x4F5C;&#x7528;&#x57DF;&#x201D;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x7EC4;&#x89C4;&#x5219;&#xFF0C;&#x5B83;&#x4E3B;&#x5BB0;&#x7740; <em>&#x5F15;&#x64CE;</em> &#x5982;&#x4F55;&#x901A;&#x8FC7;&#x6807;&#x8BC6;&#x7B26;&#x540D;&#x79F0;&#x5728;&#x5F53;&#x524D;&#x7684; <em>&#x4F5C;&#x7528;&#x57DF;</em>&#xFF0C;&#x6216;&#x8005;&#x5728;&#x5305;&#x542B;&#x5B83;&#x7684;&#x4EFB;&#x610F; <em>&#x5D4C;&#x5957;&#x4F5C;&#x7528;&#x57DF;</em> &#x4E2D;&#x6765;&#x67E5;&#x8BE2;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;</p>
+<p>&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#x5360;&#x7EDF;&#x6CBB;&#x5730;&#x4F4D;&#x7684;&#x6A21;&#x578B;&#x3002;&#x5176;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x79CD;&#x662F;&#x6700;&#x6700;&#x5E38;&#x89C1;&#xFF0C;&#x5728;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#x88AB;&#x4F7F;&#x7528;&#x7684;&#x3002;&#x5B83;&#x79F0;&#x4E3A; <strong>&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;</strong>&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x6DF1;&#x5165;&#x68C0;&#x89C6;&#x5B83;&#x3002;&#x53E6;&#x4E00;&#x79CD;&#x4ECD;&#x7136;&#x88AB;&#x4E00;&#x4E9B;&#x8BED;&#x8A00;&#xFF08;&#x6BD4;&#x5982;Bash&#x811A;&#x672C;&#xFF0C;Perl&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x6A21;&#x5F0F;&#xFF0C;&#x7B49;&#x7B49;&#xFF09;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x79F0;&#x4E3A; <strong>&#x52A8;&#x6001;&#x4F5C;&#x7528;&#x57DF;</strong>&#x3002;</p>
+<p>&#x52A8;&#x6001;&#x4F5C;&#x7528;&#x57DF;&#x5728;&#x9644;&#x5F55;A&#x4E2D;&#x8BB2;&#x89E3;&#x3002;&#x6211;&#x5728;&#x8FD9;&#x91CC;&#x63D0;&#x5230;&#x5B83;&#x4EC5;&#x4EC5;&#x662F;&#x4E3A;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5BF9;&#x6BD4;&#xFF0C;&#x800C;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x662F;JavaScript&#x91C7;&#x7528;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x6A21;&#x578B;&#x3002;</p>
+<h2 id="&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x65F6;">&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x65F6;</h2>
+<p>&#x6B63;&#x5982;&#x6211;&#x4EEC;&#x5728;&#x7B2C;&#x4E00;&#x7AE0;&#x4E2D;&#x8BA8;&#x8BBA;&#x7684;&#xFF0C;&#x6807;&#x51C6;&#x8BED;&#x8A00;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x4F20;&#x7EDF;&#x6B65;&#x9AA4;&#x79F0;&#x4E3A;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x5206;&#x8BCD;&#xFF09;&#x3002;&#x5982;&#x679C;&#x4F60;&#x56DE;&#x5FC6;&#x4E00;&#x4E0B;&#xFF0C;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5904;&#x7406;&#x662F;&#x68C0;&#x67E5;&#x4E00;&#x4E32;&#x6E90;&#x4EE3;&#x7801;&#x5B57;&#x7B26;&#xFF0C;&#x5E76;&#x7ED9;token&#x8D4B;&#x4E88;&#x8BED;&#x6CD5;&#x542B;&#x4E49;&#x4F5C;&#x4E3A;&#x67D0;&#x79CD;&#x6709;&#x72B6;&#x6001;&#x89E3;&#x6790;&#x7684;&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x6B63;&#x662F;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x7ED9;&#x7406;&#x89E3;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x4EC0;&#x4E48;&#x63D0;&#x4F9B;&#x4E86;&#x57FA;&#x7840;&#xFF0C;&#x4E5F;&#x662F;&#x8FD9;&#x4E2A;&#x540D;&#x8BCD;&#x7684;&#x6E0A;&#x6E90;&#x3002;</p>
+<p>&#x8981;&#x5B9A;&#x4E49;&#x5B83;&#x6709;&#x70B9;&#x513F;&#x515C;&#x5708;&#x5B50;&#xFF0C;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x5728;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x65F6;&#x88AB;&#x5B9A;&#x4E49;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x57FA;&#x4E8E;&#xFF0C;&#x4F60;&#xFF0C;&#x5728;&#x5199;&#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x53D8;&#x91CF;&#x548C;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x5757;&#x513F;&#x5728;&#x4F55;&#x5904;&#x88AB;&#x7F16;&#x5199;&#x51B3;&#x5B9A;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x5728;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x5904;&#x7406;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x65F6;&#xFF08;&#x57FA;&#x672C;&#x4E0A;&#xFF09;&#x662F;&#x56FA;&#x5B9A;&#x4E0D;&#x53D8;&#x7684;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x7A0D;&#x7A0D;&#x770B;&#x5230;&#x6709;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x9A97;&#x8FC7;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4ECE;&#x800C;&#x5728;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x5904;&#x7406;&#x8FC7;&#x540E;&#x6539;&#x53D8;&#x5B83;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x90FD;&#x662F;&#x4F7F;&#x4EBA;&#x76B1;&#x7709;&#x5934;&#x7684;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#x516C;&#x8BA4;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x662F;&#xFF0C;&#x5C06;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x770B;&#x4F5C;&#x662F;&#x4EC5;&#x4EC5;&#x4F9D;&#x9760;&#x8BCD;&#x6CD5;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x672C;&#x8D28;&#x4E0A;&#x5B8C;&#x5168;&#x662F;&#x7F16;&#x5199;&#x65F6;&#x51B3;&#x5B9A;&#x7684;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">a</span>) </span>{
+
+    <span class="hljs-keyword">var</span> b = a * <span class="hljs-number">2</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params">c</span>) </span>{
+        <span class="hljs-built_in">console</span>.log( a, b, c );
+    }
+
+    bar(b * <span class="hljs-number">3</span>);
+}
+
+foo( <span class="hljs-number">2</span> ); <span class="hljs-comment">// 2 4 12</span>
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x5B9E;&#x4F8B;&#x4E2D;&#x6709;&#x4E09;&#x4E2A;&#x56FA;&#x6709;&#x7684;&#x5D4C;&#x5957;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x5C06;&#x8FD9;&#x4E9B;&#x4F5C;&#x7528;&#x57DF;&#x8003;&#x8651;&#x4E3A;&#x5957;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x6C14;&#x6CE1;&#x53EF;&#x80FD;&#x6709;&#x52A9;&#x4E8E;&#x601D;&#x8003;&#x3002;</p>
+<p><img src="fig2.png" width="500"></p>
+<p><strong>&#x6C14;&#x6CE1;1</strong> &#x5305;&#x56F4;&#x7740;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x5B83;&#x91CC;&#x9762;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#xFF1A;<code>foo</code>&#x3002;</p>
+<p><strong>&#x6C14;&#x6CE1;2</strong> &#x5305;&#x56F4;&#x7740;&#x4F5C;&#x7528;&#x57DF;<code>foo</code>&#xFF0C;&#x5B83;&#x542B;&#x6709;&#x4E09;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#xFF1A;<code>a</code>&#xFF0C;<code>bar</code>&#x548C;<code>b</code>&#x3002;</p>
+<p><strong>&#x6C14;&#x6CE1;3</strong> &#x5305;&#x56F4;&#x7740;&#x4F5C;&#x7528;&#x57DF;<code>bar</code>&#xFF0C;&#x5B83;&#x91CC;&#x9762;&#x53EA;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#xFF1A;<code>c</code>&#x3002;</p>
+<p>&#x4F5C;&#x7528;&#x57DF;&#x6C14;&#x6CE1;&#x662F;&#x6839;&#x636E;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x5757;&#x513F;&#x88AB;&#x5199;&#x5728;&#x4F55;&#x5904;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x4E00;&#x4E2A;&#x5D4C;&#x5957;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x5185;&#x90E8;&#xFF0C;&#x7B49;&#x7B49;&#x3002;&#x5728;&#x4E0B;&#x4E00;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8BA8;&#x8BBA;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x4E0D;&#x540C;&#x5355;&#x4F4D;&#xFF0C;&#x4F46;&#x662F;&#x5C31;&#x73B0;&#x5728;&#x6765;&#x8BF4;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x8BA4;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x6C14;&#x6CE1;&#x3002;</p>
+<p><code>bar</code>&#x7684;&#x6C14;&#x6CE1;&#x5B8C;&#x5168;&#x88AB;&#x5305;&#x542B;&#x5728;<code>foo</code>&#x7684;&#x6C14;&#x6CE1;&#x4E2D;&#xFF0C;&#x56E0;&#x4E3A;&#xFF08;&#x800C;&#x4E14;&#x53EA;&#x56E0;&#x4E3A;&#xFF09;&#x8FD9;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x5B9A;&#x4E49;&#x51FD;&#x6570;<code>bar</code>&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x8FD9;&#x4E9B;&#x5D4C;&#x5957;&#x7684;&#x6C14;&#x6CE1;&#x662F;&#x4E25;&#x683C;&#x5D4C;&#x5957;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x8BA8;&#x8BBA;&#x6C14;&#x6CE1;&#x53EF;&#x4EE5;&#x8DE8;&#x8D8A;&#x8FB9;&#x754C;&#x7684;&#x7EF4;&#x6069;&#x56FE;&#xFF08;Venn diagrams&#xFF09;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x6CA1;&#x6709;&#x90A3;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x6C14;&#x6CE1;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#xFF08;&#x90E8;&#x5206;&#x5730;&#xFF09;&#x5B58;&#x5728;&#x4E8E;&#x53E6;&#x5916;&#x4E24;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x6C14;&#x6CE1;&#x4E2D;&#xFF0C;&#x5C31;&#x50CF;&#x6CA1;&#x6709;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x90E8;&#x5206;&#x5730;&#x5B58;&#x5728;&#x4E8E;&#x5B83;&#x7684;&#x4E24;&#x4E2A;&#x7236;&#x51FD;&#x6570;&#x4E2D;&#x4E00;&#x6837;&#x3002;</p>
+<h3 id="&#x67E5;&#x8BE2;">&#x67E5;&#x8BE2;</h3>
+<p>&#x8FD9;&#x4E9B;&#x4F5C;&#x7528;&#x57DF;&#x6C14;&#x6CE1;&#x7684;&#x7ED3;&#x6784;&#x548C;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x5B8C;&#x5168;&#x89E3;&#x91CA;&#x4E86; <em>&#x5F15;&#x64CE;</em> &#x5728;&#x67E5;&#x627E;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#x65F6;&#xFF0C;&#x5B83;&#x9700;&#x8981;&#x67E5;&#x770B;&#x7684;&#x6240;&#x6709;&#x5730;&#x65B9;&#x3002;</p>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x6BB5;&#x4E2D;&#xFF0C;<em>&#x5F15;&#x64CE;</em> &#x6267;&#x884C;&#x8BED;&#x53E5;<code>console.log(..)</code>&#x5E76;&#x5F00;&#x59CB;&#x67E5;&#x627E;&#x4E09;&#x4E2A;&#x88AB;&#x5F15;&#x7528;&#x7684;&#x53D8;&#x91CF;<code>a</code>&#xFF0C;<code>b</code>&#x548C;<code>c</code>&#x3002;&#x5B83;&#x9996;&#x5148;&#x4ECE;&#x6700;&#x5185;&#x90E8;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x6C14;&#x6CE1;&#x5F00;&#x59CB;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;<code>bar(..)</code>&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#x5B83;&#x627E;&#x4E0D;&#x5230;<code>a</code>&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x5411;&#x4E0A;&#x8D70;&#x4E00;&#x5C42;&#xFF0C;&#x5230;&#x5916;&#x9762;&#x4E0B;&#x4E00;&#x4E2A;&#x6700;&#x8FD1;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x6C14;&#x6CE1;&#xFF0C;<code>foo(..)</code>&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x5B83;&#x5728;&#x8FD9;&#x91CC;&#x627E;&#x5230;&#x4E86;<code>a</code>&#xFF0C;&#x4E8E;&#x662F;&#x5B83;&#x5C31;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;<code>a</code>&#x3002;&#x540C;&#x6837;&#x7684;&#x4E8B;&#x60C5;&#x4E5F;&#x53D1;&#x751F;&#x5728;<code>b</code>&#x4E0A;&#x3002;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;<code>c</code>&#xFF0C;&#x5B83;&#x5728;<code>bar(..)</code>&#x5185;&#x90E8;&#x5C31;&#x627E;&#x5230;&#x4E86;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728;<code>bar(..)</code>&#x5185;&#x90E8;&#x548C;<code>foo(..)</code>&#x5185;&#x90E8;&#x90FD;&#x6709;&#x4E00;&#x4E2A;<code>c</code>&#xFF0C;&#x90A3;&#x4E48;<code>console.log(..)</code>&#x8BED;&#x53E5;&#x5C06;&#x4F1A;&#x627E;&#x5230;&#x5E76;&#x4F7F;&#x7528;<code>bar(..)</code>&#x4E2D;&#x7684;&#x90A3;&#x4E00;&#x4E2A;&#xFF0C;&#x7EDD;&#x4E0D;&#x4F1A;&#x5230;&#x8FBE;<code>foo(..)</code>&#x4E2D;&#x7684;&#x90A3;&#x4E00;&#x4E2A;&#x3002;</p>
+<p><strong>&#x4E00;&#x65E6;&#x627E;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#xFF0C;&#x4F5C;&#x7528;&#x57DF;&#x67E5;&#x8BE2;&#x5C31;&#x505C;&#x6B62;&#x4E86;</strong>&#x3002;&#x76F8;&#x540C;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x540D;&#x79F0;&#x53EF;&#x4EE5;&#x5728;&#x5D4C;&#x5957;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x591A;&#x4E2A;&#x5C42;&#x4E2D;&#x88AB;&#x6307;&#x5B9A;&#xFF0C;&#x8FD9;&#x79F0;&#x4E3A;&#x201C;&#x906E;&#x853D;&#xFF08;shadowing&#xFF09;&#x201D;&#xFF08;&#x5185;&#x90E8;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x201C;&#x906E;&#x853D;&#x201D;&#x4E86;&#x5916;&#x90E8;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#xFF09;&#x3002;&#x65E0;&#x8BBA;&#x5982;&#x4F55;&#x906E;&#x853D;&#xFF0C;&#x4F5C;&#x7528;&#x57DF;&#x67E5;&#x8BE2;&#x603B;&#x662F;&#x4ECE;&#x5F53;&#x524D;&#x88AB;&#x6267;&#x884C;&#x7684;&#x6700;&#x5185;&#x4FA7;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5F00;&#x59CB;&#xFF0C;&#x5411;&#x5916;/&#x5411;&#x4E0A;&#x4E0D;&#x65AD;&#x67E5;&#x627E;&#xFF0C;&#x76F4;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x624D;&#x505C;&#x6B62;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x5168;&#x5C40;&#x53D8;&#x91CF;&#x4E5F;&#x81EA;&#x52A8;&#x5730;&#x662F;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#xFF08;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x662F;<code>window</code>&#xFF0C;&#x7B49;&#x7B49;&#xFF09;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x8BCD;&#x6CD5;&#x540D;&#x79F0;&#xFF0C;&#x800C;&#x901A;&#x8FC7;&#x5C06;&#x5B83;&#x4F5C;&#x4E3A;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x5F15;&#x7528;&#x6765;&#x95F4;&#x63A5;&#x5730;&#x5F15;&#x7528;&#xFF0C;&#x662F;&#x53EF;&#x80FD;&#x7684;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">window</span>.a
+</code></pre>
+<p>&#x8FD9;&#x79CD;&#x6280;&#x672F;&#x7ED9;&#x51FA;&#x4E86;&#x8BBF;&#x95EE;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6CA1;&#x6709;&#x5B83;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x5C06;&#x56E0;&#x4E3A;&#x88AB;&#x906E;&#x853D;&#x800C;&#x4E0D;&#x53EF;&#x8BBF;&#x95EE;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x88AB;&#x906E;&#x853D;&#x7684;&#x975E;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x662F;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7684;&#x3002;</p>
+<p>&#x4E0D;&#x7BA1;&#x51FD;&#x6570;&#x662F;&#x4ECE; <em>&#x54EA;&#x91CC;</em> &#x88AB;&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x4E5F;&#x4E0D;&#x8BBA;&#x5B83;&#x662F; <em>&#x5982;&#x4F55;</em> &#x88AB;&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x5B83;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x7531;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x88AB;&#x58F0;&#x660E;&#x7684;&#x4F4D;&#x7F6E; <strong>&#x552F;&#x4E00;</strong> &#x5B9A;&#x4E49;&#x7684;&#x3002;</p>
+<p>&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x67E5;&#x8BE2; <em>&#x4EC5;&#x4EC5;</em> &#x5728;&#x5904;&#x7406;&#x5934;&#x7B49;&#x6807;&#x8BC6;&#x7B26;&#x65F6;&#x5B9E;&#x65BD;&#xFF0C;&#x6BD4;&#x5982;<code>a</code>&#xFF0C;<code>b</code>&#xFF0C;&#x548C;<code>c</code>&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x4E2D;&#x62E5;&#x6709;&#x4E00;&#x4E2A;<code>foo.bar.baz</code>&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x67E5;&#x8BE2;&#x5C06;&#x5728;&#x67E5;&#x627E;<code>foo</code>&#x6807;&#x8BC6;&#x7B26;&#x65F6;&#x5B9E;&#x65BD;&#xFF0C;&#x4F46;&#x4E00;&#x65E6;&#x5B9A;&#x4F4D;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x89C4;&#x5219;&#x5C06;&#x4F1A;&#x5206;&#x522B;&#x63A5;&#x7BA1;<code>bar</code>&#x548C;<code>baz</code>&#x5C5E;&#x6027;&#x7684;&#x89E3;&#x6790;&#x3002;</p>
+<h2 id="&#x6B3A;&#x9A97;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;">&#x6B3A;&#x9A97;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;</h2>
+<p>&#x5982;&#x679C;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x4EC5;&#x4EC5;&#x662F;&#x7531;&#x51FD;&#x6570;&#x88AB;&#x58F0;&#x660E;&#x7684;&#x4F4D;&#x7F6E;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x5B8C;&#x5168;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x5199;&#x65F6;&#x7684;&#x51B3;&#x5B9A;&#xFF0C;&#x90A3;&#x4E48;&#x600E;&#x4E48;&#x53EF;&#x80FD;&#x6709;&#x529E;&#x6CD5;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x201C;&#x4FEE;&#x6539;&#x201D;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#xFF0C;&#x4F5C;&#x5F0A;&#x6B3A;&#x9A97;&#xFF09;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x5462;&#xFF1F;</p>
+<p>JavaScript&#x6709;&#x4E24;&#x79CD;&#x8FD9;&#x6837;&#x7684;&#x673A;&#x5236;&#x3002;&#x5728;&#x5E7F;&#x5927;&#x7684;&#x793E;&#x533A;&#x4E2D;&#x5B83;&#x4EEC;&#x90FD;&#x7B49;&#x540C;&#x5730;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x8BA9;&#x4EBA;&#x76B1;&#x7709;&#x5934;&#x7684;&#xFF0C;&#x5728;&#x4F60;&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x662F;&#x4E00;&#x79CD;&#x5DEE;&#x52B2;&#x513F;&#x7684;&#x505A;&#x6CD5;&#x3002;&#x4F46;&#x662F;&#x5173;&#x4E8E;&#x5B83;&#x4EEC;&#x7684;&#x5177;&#x6709;&#x4EE3;&#x8868;&#x6027;&#x7684;&#x4E89;&#x8BBA;&#x7ECF;&#x5E38;&#x9519;&#x8FC7;&#x4E86;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;&#xFF1A;<strong>&#x6B3A;&#x9A97;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x4F1A;&#x5BFC;&#x81F4;&#x66F4;&#x4F4E;&#x4E0B;&#x7684;&#x6027;&#x80FD;&#x3002;</strong></p>
+<p>&#x5728;&#x6211;&#x8BB2;&#x89E3;&#x6027;&#x80FD;&#x7684;&#x95EE;&#x9898;&#x4EE5;&#x524D;&#xFF0C;&#x5148;&#x8BA9;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x8FD9;&#x4E24;&#x79CD;&#x673A;&#x5236;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;&#x3002;</p>
+<h3 id="eval"><code>eval</code></h3>
+<p>JavaScript&#x4E2D;&#x7684;<code>eval(..)</code>&#x51FD;&#x6570;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x503C;&#xFF0C;&#x5E76;&#x5C06;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5185;&#x5BB9;&#x770B;&#x4F5C;&#x662F;&#x597D;&#x50CF;&#x5B83;&#x5DF2;&#x7ECF;&#x88AB;&#x5B9E;&#x9645;&#x7F16;&#x5199;&#x5728;&#x7A0B;&#x5E8F;&#x7684;&#x90A3;&#x4E2A;&#x4F4D;&#x7F6E;&#x4E0A;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x7F16;&#x7A0B;&#x7684;&#x65B9;&#x5F0F;&#x5728;&#x4F60;&#x7F16;&#x5199;&#x597D;&#x7684;&#x4EE3;&#x7801;&#x5185;&#x90E8;&#x751F;&#x6210;&#x4EE3;&#x7801;&#xFF0C;&#x800C;&#x4E14;&#x4F60;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C31;&#x597D;&#x50CF;&#x5B83;&#x5728;&#x7F16;&#x5199;&#x65F6;&#x5C31;&#x5DF2;&#x7ECF;&#x5728;&#x90A3;&#x91CC;&#x4E86;&#x4E00;&#x6837;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4EE5;&#x8FD9;&#x79CD;&#x89C2;&#x70B9;&#x6765;&#x8BC4;&#x4EF7;<code>eval(..)</code>&#xFF0C;&#x90A3;&#x4E48;<code>eval(..)</code>&#x662F;&#x5982;&#x4F55;&#x5141;&#x8BB8;&#x4F60;&#x4FEE;&#x6539;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x73AF;&#x5883;&#x5E94;&#x5F53;&#x662F;&#x5F88;&#x6E05;&#x695A;&#x7684;&#xFF1A;&#x6B3A;&#x9A97;&#x5E76;&#x5047;&#x88C5;&#x8FD9;&#x4E2A;&#x7F16;&#x5199;&#x65F6;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#xFF0C;&#x8BCD;&#x6CD5;&#xFF09;&#x4EE3;&#x7801;&#x4E00;&#x76F4;&#x5C31;&#x5728;&#x90A3;&#x91CC;&#x3002;</p>
+<p>&#x5728;<code>eval(..)</code>&#x88AB;&#x6267;&#x884C;&#x7684;&#x540E;&#x7EED;&#x4EE3;&#x7801;&#x884C;&#x4E2D;&#xFF0C;<em>&#x5F15;&#x64CE;</em> &#x5C06;&#x4E0D;&#x4F1A;&#x201C;&#x77E5;&#x9053;&#x201D;&#x6216;&#x201C;&#x5173;&#x5FC3;&#x201D;&#x524D;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x88AB;&#x52A8;&#x6001;&#x7FFB;&#x8BD1;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x56E0;&#x6B64;&#x4FEE;&#x6539;&#x4E86;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x73AF;&#x5883;&#x3002;<em>&#x5F15;&#x64CE;</em> &#x5C06;&#x4F1A;&#x50CF;&#x5B83;&#x4E00;&#x76F4;&#x505A;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x7B80;&#x5355;&#x5730;&#x8FDB;&#x884C;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x67E5;&#x8BE2;&#x3002;</p>
+<p>&#x8003;&#x8651;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">str, a</span>) </span>{
+    <span class="hljs-built_in">eval</span>( str ); <span class="hljs-comment">// &#x4F5C;&#x5F0A;&#xFF01;</span>
+    <span class="hljs-built_in">console</span>.log( a, b );
+}
+
+<span class="hljs-keyword">var</span> b = <span class="hljs-number">2</span>;
+
+foo( <span class="hljs-string">&quot;var b = 3;&quot;</span>, <span class="hljs-number">1</span> ); <span class="hljs-comment">// 1 3</span>
+</code></pre>
+<p>&#x5728;<code>eval(..)</code>&#x8C03;&#x7528;&#x7684;&#x4F4D;&#x7F6E;&#x4E0A;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;<code>&quot;var b = 3&quot;</code>&#x88AB;&#x770B;&#x4F5C;&#x662F;&#x4E00;&#x76F4;&#x5C31;&#x5B58;&#x5728;&#x5728;&#x90A3;&#x91CC;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x6070;&#x5DE7;&#x58F0;&#x660E;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x53D8;&#x91CF;<code>b</code>&#xFF0C;&#x5B83;&#x5C31;&#x4FEE;&#x6539;&#x4E86;&#x73B0;&#x5B58;&#x7684;<code>foo(..)</code>&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5C31;&#x50CF;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x5B9E;&#x9645;&#x4E0A;&#x5728;<code>foo(..)</code>&#x5185;&#x90E8;&#x521B;&#x5EFA;&#x4E86;&#x53D8;&#x91CF;<code>b</code>&#xFF0C;&#x5B83;&#x906E;&#x853D;&#x4E86;&#x58F0;&#x660E;&#x5728;&#x5916;&#x90E8;&#xFF08;&#x5168;&#x5C40;&#xFF09;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x7684;<code>b</code>&#x3002;</p>
+<p>&#x5F53;<code>console.log(..)</code>&#x8C03;&#x7528;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x5728;<code>foo(..)</code>&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x627E;&#x5230;<code>a</code>&#x548C;<code>b</code>&#xFF0C;&#x800C;&#x4E14;&#x7EDD;&#x4E0D;&#x4F1A;&#x627E;&#x5230;&#x5916;&#x90E8;&#x7684;<code>b</code>&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x6253;&#x5370;&#x51FA;&quot;1 3&quot;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&quot;1, 2&quot;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x4E3A;&#x4E86;&#x7B80;&#x5355;&#x8D77;&#x89C1;&#xFF0C;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#x7684;&#x201C;&#x4EE3;&#x7801;&#x201D;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#x6587;&#x5B57;&#x3002;&#x4F46;&#x662F;&#x5B83;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6839;&#x636E;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x903B;&#x8F91;&#x5C06;&#x5B57;&#x7B26;&#x62FC;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x4EE5;&#x7F16;&#x7A0B;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x3002;<code>eval(..)</code>&#x901A;&#x5E38;&#x88AB;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x56E0;&#x4E3A;&#x52A8;&#x6001;&#x5730;&#x5BF9;&#x4E00;&#x6BB5;&#x5B9E;&#x8D28;&#x4E0A;&#x6E90;&#x81EA;&#x5B57;&#x7B26;&#x4E32;&#x5B57;&#x9762;&#x503C;&#x7684;&#x9759;&#x6001;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x6C42;&#x503C;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x6BD4;&#x76F4;&#x63A5;&#x7F16;&#x5199;&#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x5E26;&#x6765;&#x66F4;&#x591A;&#x771F;&#x6B63;&#x7684;&#x597D;&#x5904;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;<code>eval(..)</code>&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x58F0;&#x660E;&#xFF08;&#x53D8;&#x91CF;&#x6216;&#x51FD;&#x6570;&#xFF09;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x4E2A;&#x52A8;&#x4F5C;&#x5C31;&#x4F1A;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;<code>eval(..)</code>&#x6240;&#x5728;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x6280;&#x672F;&#x4E0A;&#x8BB2;&#xFF0C;<code>eval(..)</code>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x79CD;&#x79CD;&#x6280;&#x5DE7;&#xFF08;&#x8D85;&#x51FA;&#x4E86;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x7684;&#x8BA8;&#x8BBA;&#x8303;&#x56F4;&#xFF09;&#x88AB;&#x201C;&#x95F4;&#x63A5;&#x201D;&#x8C03;&#x7528;&#xFF0C;&#x800C;&#x4F7F;&#x5B83;&#x5728;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x6B64;&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x4F46;&#x4E0D;&#x8BBA;&#x90A3;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;<code>eval(..)</code>&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x7F16;&#x5199;&#x65F6;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x5F53;<code>eval(..)</code>&#x88AB;&#x7528;&#x4E8E;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x7684;strict&#x6A21;&#x5F0F;&#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x5728;<code>eval(..)</code>&#x5185;&#x90E8;&#x505A;&#x51FA;&#x7684;&#x58F0;&#x660E;&#x4E0D;&#x4F1A;&#x5B9E;&#x9645;&#x4E0A;&#x4FEE;&#x6539;&#x5305;&#x56F4;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">str</span>) </span>{
+<span class="hljs-meta">   &quot;use strict&quot;</span>;
+   <span class="hljs-built_in">eval</span>( str );
+   <span class="hljs-built_in">console</span>.log( a ); <span class="hljs-comment">// ReferenceError: a is not defined</span>
+}
+
+foo( <span class="hljs-string">&quot;var a = 2&quot;</span> );
+</code></pre>
+<p>&#x5728;JavaScript&#x4E2D;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x7684;&#x5DE5;&#x5177;&#x62E5;&#x6709;&#x4E0E;<code>eval(..)</code>&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#x7684;&#x6548;&#x679C;&#x3002;<code>setTimeout(..)</code>&#x548C;<code>setInterval(..)</code><em>&#x53EF;&#x4EE5;</em> &#x4E3A;&#x5B83;&#x4EEC;&#x5404;&#x81EA;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x503C;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5176;&#x5185;&#x5BB9;&#x5C06;&#x4F1A;&#x88AB;<code>eval</code>&#x4E3A;&#x4E00;&#x4E2A;&#x52A8;&#x6001;&#x751F;&#x6210;&#x7684;&#x51FD;&#x6570;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x8FD9;&#x79CD;&#x8001;&#x65E7;&#x7684;&#xFF0C;&#x9057;&#x4EA7;&#x884C;&#x4E3A;&#x65E9;&#x5C31;&#x88AB;&#x5E9F;&#x5F03;&#x4E86;&#x3002;&#x522B;&#x8FD9;&#x4E48;&#x505A;&#xFF01;</p>
+<p><code>new Function(..)</code>&#x51FD;&#x6570;&#x6784;&#x9020;&#x5668;&#x7C7B;&#x4F3C;&#x5730;&#x4E3A;&#x5B83;&#x7684; <strong>&#x6700;&#x540E;</strong> &#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x503C;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6765;&#x628A;&#x5B83;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x52A8;&#x6001;&#x751F;&#x6210;&#x7684;&#x51FD;&#x6570;&#xFF08;&#x524D;&#x9762;&#x7684;&#x53C2;&#x6570;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF0C;&#x5C06;&#x4F5C;&#x4E3A;&#x65B0;&#x51FD;&#x6570;&#x7684;&#x547D;&#x540D;&#x53C2;&#x6570;&#xFF09;&#x3002;&#x8FD9;&#x79CD;&#x51FD;&#x6570;&#x6784;&#x9020;&#x5668;&#x8BED;&#x6CD5;&#x8981;&#x6BD4;<code>eval(..)</code>&#x7A0D;&#x7A0D;&#x5B89;&#x5168;&#x4E00;&#x4E9B;&#xFF0C;&#x4F46;&#x5728;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x5B83;&#x4ECD;&#x7136;&#x5E94;&#x5F53;&#x88AB;&#x907F;&#x514D;&#x3002;</p>
+<p>&#x5728;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x52A8;&#x6001;&#x751F;&#x6210;&#x4EE3;&#x7801;&#x7684;&#x7528;&#x4F8B;&#x5C11;&#x7684;&#x4E0D;&#x53EF;&#x601D;&#x8BAE;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x6027;&#x80FD;&#x4E0A;&#x7684;&#x5012;&#x9000;&#x4F7F;&#x5F97;&#x8FD9;&#x79CD;&#x80FD;&#x529B;&#x51E0;&#x4E4E;&#x603B;&#x662F;&#x5F97;&#x4E0D;&#x507F;&#x5931;&#x3002;</p>
+<h3 id="with"><code>with</code></h3>
+<p>JavaScript&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x4F7F;&#x4EBA;&#x76B1;&#x7709;&#x5934;&#xFF08;&#x800C;&#x4E14;&#x73B0;&#x5728;&#x88AB;&#x5E9F;&#x5F03;&#x4E86;&#xFF01;&#xFF09;&#xFF0C;&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x6B3A;&#x9A97;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x7279;&#x6027;&#x662F;<code>with</code>&#x5173;&#x952E;&#x5B57;&#x3002;&#x6709;&#x8BB8;&#x591A;&#x79CD;&#x5408;&#x6CD5;&#x7684;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x8BB2;&#x89E3;<code>with</code>&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x5728;&#x6B64;&#x9009;&#x62E9;&#x4ECE;&#x5B83;&#x5982;&#x4F55;&#x4E0E;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x4E92;&#x52A8;&#x5E76;&#x5F71;&#x54CD;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x8BB2;&#x89E3;&#x5B83;&#x3002;</p>
+<p>&#x8BB2;&#x89E3;<code>with</code>&#x7684;&#x5178;&#x578B;&#x65B9;&#x5F0F;&#x662F;&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x7F29;&#x5199;&#xFF0C;&#x6765;&#x5F15;&#x7528;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x591A;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x800C; <em>&#x4E0D;&#x5FC5;</em> &#x6BCF;&#x6B21;&#x90FD;&#x91CD;&#x590D;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x672C;&#x8EAB;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> obj = {
+    a: <span class="hljs-number">1</span>,
+    b: <span class="hljs-number">2</span>,
+    c: <span class="hljs-number">3</span>
+};
+
+<span class="hljs-comment">//  &#x91CD;&#x590D;&#x201C;obj&#x201D;&#x663E;&#x5F97;&#x66F4;&#x201C;&#x7E41;&#x5197;&#x201D;</span>
+obj.a = <span class="hljs-number">2</span>;
+obj.b = <span class="hljs-number">3</span>;
+obj.c = <span class="hljs-number">4</span>;
+
+<span class="hljs-comment">// &#x201C;&#x66F4;&#x7B80;&#x5355;&#x201D;&#x7684;&#x7F29;&#x5199;</span>
+<span class="hljs-keyword">with</span> (obj) {
+    a = <span class="hljs-number">3</span>;
+    b = <span class="hljs-number">4</span>;
+    c = <span class="hljs-number">5</span>;
+}
+</code></pre>
+<p>&#x7136;&#x800C;&#xFF0C;&#x8FD9;&#x91CC;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x60C5;&#x8981;&#x6BD4;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x7684;&#x4FBF;&#x6377;&#x7F29;&#x5199;&#x8981;&#x591A;&#x5F97;&#x591A;&#x3002;&#x8003;&#x8651;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">obj</span>) </span>{
+    <span class="hljs-keyword">with</span> (obj) {
+        a = <span class="hljs-number">2</span>;
+    }
+}
+
+<span class="hljs-keyword">var</span> o1 = {
+    a: <span class="hljs-number">3</span>
+};
+
+<span class="hljs-keyword">var</span> o2 = {
+    b: <span class="hljs-number">3</span>
+};
+
+foo( o1 );
+<span class="hljs-built_in">console</span>.log( o1.a ); <span class="hljs-comment">// 2</span>
+
+foo( o2 );
+<span class="hljs-built_in">console</span>.log( o2.a ); <span class="hljs-comment">// undefined</span>
+<span class="hljs-built_in">console</span>.log( a ); <span class="hljs-comment">// 2 -- &#x54E6;&#xFF0C;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x88AB;&#x6CC4;&#x6F0F;&#x4E86;&#xFF01;</span>
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x4E86;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;<code>o1</code>&#x548C;<code>o2</code>&#x3002;&#x4E00;&#x4E2A;&#x6709;<code>a</code>&#x5C5E;&#x6027;&#xFF0C;&#x800C;&#x53E6;&#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x3002;<code>foo(..)</code>&#x51FD;&#x6570;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5F15;&#x7528;<code>obj</code>&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x503C;&#xFF0C;&#x5E76;&#x5728;&#x8FD9;&#x4E2A;&#x5F15;&#x7528;&#x4E0A;&#x8C03;&#x7528;<code>with (obj) {..}</code>&#x3002;&#x5728;<code>with</code>&#x5757;&#x513F;&#x5185;&#x90E8;&#xFF0C;&#x6211;&#x4EEC;&#x5236;&#x9020;&#x4E86;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;<code>a</code>&#x7684;&#x770B;&#x4F3C;&#x662F;&#x666E;&#x901A;&#x8BCD;&#x6CD5;&#x5F15;&#x7528;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;LHS&#x5F15;&#x7528;&#xFF08;&#x89C1;&#x7B2C;&#x4E00;&#x7AE0;&#xFF09;&#xFF0C;&#x5E76;&#x5C06;&#x503C;<code>2</code>&#x8D4B;&#x4E88;&#x5B83;&#x3002;</p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x4F20;&#x5165;<code>o1</code>&#x65F6;&#xFF0C;&#x8D4B;&#x503C;<code>a = 2</code>&#x627E;&#x5230;&#x5C5E;&#x6027;<code>o1.a</code>&#x5E76;&#x8D4B;&#x4E88;&#x5B83;&#x503C;<code>2</code>&#xFF0C;&#x6B63;&#x5982;&#x5728;&#x540E;&#x7EED;&#x7684;<code>console.log(o1.a)</code>&#x8BED;&#x53E5;&#x53CD;&#x5E94;&#x7684;&#x90A3;&#x6837;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x4F20;&#x5165;<code>o2</code>&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x6CA1;&#x6709;<code>a</code>&#x5C5E;&#x6027;&#xFF0C;&#x6CA1;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x5C5E;&#x6027;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x6240;&#x4EE5;<code>o2.a</code>&#x8FD8;&#x662F;<code>undefined</code>&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x4E4B;&#x540E;&#x6211;&#x4EEC;&#x6CE8;&#x610F;&#x5230;&#x4E00;&#x4E2A;&#x7279;&#x522B;&#x7684;&#x526F;&#x4F5C;&#x7528;&#xFF0C;&#x8D4B;&#x503C;<code>a = 2</code>&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;<code>a</code>&#x3002;&#x8FD9;&#x600E;&#x4E48;&#x53EF;&#x80FD;&#xFF1F;</p>
+<p><code>with</code>&#x8BED;&#x53E5;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x6709;0&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x5E76; <strong>&#x5C06;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x89C6;&#x4E3A;&#x597D;&#x50CF;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;&#x9694;&#x79BB;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;</strong>&#xFF0C;&#x56E0;&#x6B64;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x88AB;&#x89C6;&#x4E3A;&#x5728;&#x8FD9;&#x4E2A;&#x201C;&#x4F5C;&#x7528;&#x57DF;&#x201D;&#x4E2D;&#x8BCD;&#x6CD5;&#x5B9A;&#x4E49;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x5C3D;&#x7BA1;&#x4E00;&#x4E2A;<code>with</code>&#x5757;&#x513F;&#x5C06;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x89C6;&#x4E3A;&#x4E00;&#x4E2A;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4F46;&#x662F;&#x5728;<code>with</code>&#x5757;&#x513F;&#x5185;&#x90E8;&#x7684;&#x4E00;&#x4E2A;&#x666E;&#x901A;<code>var</code>&#x58F0;&#x660E;&#x5C06;&#x4E0D;&#x4F1A;&#x5F52;&#x4E8E;&#x8FD9;&#x4E2A;<code>with</code>&#x5757;&#x513F;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x800C;&#x662F;&#x5F52;&#x4E8E;&#x5305;&#x542B;&#x5B83;&#x7684;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>eval(..)</code>&#x51FD;&#x6570;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x542B;&#x6709;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x58F0;&#x660E;&#x7684;&#x4EE3;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x4FEE;&#x6539;&#x73B0;&#x5B58;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x800C;<code>with</code>&#x8BED;&#x53E5;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4ECE;&#x4F60;&#x4F20;&#x9012;&#x7ED9;&#x5B83;&#x7684;&#x5BF9;&#x8C61;&#x4E2D;&#x51ED;&#x7A7A;&#x5236;&#x9020;&#x4E86;&#x4E00;&#x4E2A; <strong>&#x5168;&#x65B0;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;</strong>&#x3002;</p>
+<p>&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x7406;&#x89E3;&#x7684;&#x8BDD;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x4F20;&#x5165;<code>o1</code>&#x65F6;<code>with</code>&#x8BED;&#x53E5;&#x58F0;&#x660E;&#x7684;&#x201C;&#x4F5C;&#x7528;&#x57DF;&#x201D;&#x5C31;&#x662F;<code>o1</code>&#xFF0C;&#x800C;&#x4E14;&#x8FD9;&#x4E2A;&#x201C;&#x4F5C;&#x7528;&#x57DF;&#x201D;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x4E8E;<code>o1.a</code>&#x5C5E;&#x6027;&#x7684;&#x201C;&#x6807;&#x8BC6;&#x7B26;&#x201D;&#x3002;&#x4F46;&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;<code>o2</code>&#x4F5C;&#x4E3A;&#x201C;&#x4F5C;&#x7528;&#x57DF;&#x201D;&#x65F6;&#xFF0C;&#x5B83;&#x91CC;&#x9762;&#x6CA1;&#x6709;&#x8FD9;&#x6837;&#x7684;<code>a</code>&#x201C;&#x6807;&#x8BC6;&#x7B26;&#x201D;&#xFF0C;&#x4E8E;&#x662F;LHS&#x6807;&#x8BC6;&#x7B26;&#x67E5;&#x8BE2;&#xFF08;&#x89C1;&#x7B2C;&#x4E00;&#x7AE0;&#xFF09;&#x7684;&#x666E;&#x901A;&#x89C4;&#x5219;&#x53D1;&#x751F;&#x4E86;&#x3002;</p>
+<p>&#x201C;&#x4F5C;&#x7528;&#x57DF;&#x201D;<code>o2</code>&#x4E2D;&#x6CA1;&#x6709;&#xFF0C;<code>foo(..)</code>&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x4E5F;&#x6CA1;&#x6709;&#xFF0C;&#x751A;&#x81F3;&#x8FDE;&#x5168;&#x5C40;&#x4F5C;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x90FD;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x6807;&#x8BC6;&#x7B26;<code>a</code>&#xFF0C;&#x6240;&#x4EE5;&#x5F53;<code>a = 2</code>&#x88AB;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x5176;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x81EA;&#x52A8;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x88AB;&#x521B;&#x5EFA;&#xFF08;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x5728;strict&#x6A21;&#x5F0F;&#x4E0B;&#xFF09;&#x3002;</p>
+<p><code>with</code>&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x5C06;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x548C;&#x5B83;&#x7684;&#x5C5E;&#x6027;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x201C;&#x6807;&#x8BC6;&#x7B26;&#x201D;&#x7684;&#x201C;&#x4F5C;&#x7528;&#x57DF;&#x201D;&#xFF0C;&#x8FD9;&#x4E2A;&#x5947;&#x602A;&#x60F3;&#x6CD5;&#x6709;&#x4E9B;&#x70E7;&#x8111;&#x3002;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x662F;&#x6211;&#x80FD;&#x7ED9;&#x51FA;&#x7684;&#x6700;&#x6E05;&#x6670;&#x7684;&#x89E3;&#x91CA;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x9664;&#x4E86;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x662F;&#x4E2A;&#x574F;&#x4E3B;&#x610F;&#x610F;&#x5916;&#xFF0C;<code>eval(..)</code>&#x548C;<code>with</code>&#x90FD;&#x53D7;Strict&#x6A21;&#x5F0F;&#x7684;&#x5F71;&#x54CD;&#xFF08;&#x5236;&#x7EA6;&#xFF09;&#x3002;<code>with</code>&#x5E72;&#x8106;&#x5C31;&#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#xFF0C;&#x800C;&#x867D;&#x7136;<code>eval(..)</code>&#x8FD8;&#x4FDD;&#x6709;&#x5176;&#x6838;&#x5FC3;&#x529F;&#x80FD;&#xFF0C;&#x4F46;&#x5404;&#x79CD;&#x95F4;&#x63A5;&#x5F62;&#x5F0F;&#x7684;&#x6216;&#x4E0D;&#x5B89;&#x5168;&#x7684;<code>eval(..)</code>&#x662F;&#x4E0D;&#x5141;&#x8BB8;&#x7684;&#x3002;</p>
+<h3 id="&#x6027;&#x80FD;">&#x6027;&#x80FD;</h3>
+<p>&#x901A;&#x8FC7;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4FEE;&#x6539;&#xFF0C;&#x6216;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;<code>eval(..)</code>&#x548C;<code>with</code>&#x90FD;&#x53EF;&#x4EE5;&#x6B3A;&#x9A97;&#x7F16;&#x5199;&#x65F6;&#x5B9A;&#x4E49;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x95EE;&#xFF0C;&#x90A3;&#x53C8;&#x6709;&#x4EC0;&#x4E48;&#x5927;&#x4E0D;&#x4E86;&#x7684;&#xFF1F;&#x5982;&#x679C;&#x5B83;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x7CBE;&#x5DE7;&#x7684;&#x529F;&#x80FD;&#x548C;&#x7F16;&#x7801;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x90A3;&#x5B83;&#x4EEC;&#x4E0D;&#x662F; <em>&#x597D;&#x7684;</em> &#x7279;&#x6027;&#x5417;&#xFF1F;<strong>&#x4E0D;&#x3002;</strong></p>
+<p>JavaScript <em>&#x5F15;&#x64CE;</em> &#x5728;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#x671F;&#x884C;&#x8BB8;&#x591A;&#x6027;&#x80FD;&#x4F18;&#x5316;&#x5DE5;&#x4F5C;&#x3002;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x4F18;&#x5316;&#x539F;&#x7406;&#x90FD;&#x5F52;&#x7ED3;&#x4E3A;&#x5B9E;&#x8D28;&#x4E0A;&#x5728;&#x8FDB;&#x884C;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x65F6;&#x53EF;&#x4EE5;&#x9759;&#x6001;&#x5730;&#x5206;&#x6790;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x63D0;&#x524D;&#x51B3;&#x5B9A;&#x6240;&#x6709;&#x7684;&#x53D8;&#x91CF;&#x548C;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x90FD;&#x5728;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD9;&#x6837;&#x5728;&#x6267;&#x884C;&#x671F;&#x95F4;&#x5C31;&#x53EF;&#x4EE5;&#x5C11;&#x82B1;&#x4E9B;&#x529B;&#x6C14;&#x6765;&#x89E3;&#x6790;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+<p>&#x4F46;&#x5982;&#x679C; <em>&#x5F15;&#x64CE;</em> &#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x627E;&#x5230;&#x4E00;&#x4E2A;<code>eval(..)</code>&#x6216;<code>with</code>&#xFF0C;&#x5B83;&#x5B9E;&#x8D28;&#x4E0A;&#x5C31;&#x4E0D;&#x5F97;&#x4E0D; <em>&#x5047;&#x5B9A;</em> &#x81EA;&#x5DF1;&#x77E5;&#x9053;&#x7684;&#x6240;&#x6709;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x7684;&#x4F4D;&#x7F6E;&#x53EF;&#x80FD;&#x662F;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4E0D;&#x53EF;&#x80FD;&#x5728;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x65F6;&#x5C31;&#x77E5;&#x9053;&#x4F60;&#x5C06;&#x4F1A;&#x5411;<code>eval(..)</code>&#x4F20;&#x9012;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x4FEE;&#x6539;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x5411;<code>with</code>&#x4F20;&#x9012;&#x7684;&#x5BF9;&#x8C61;&#x6709;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x5185;&#x5BB9;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5C06;&#x88AB;&#x67E5;&#x8BE2;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p>
+<p>&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x60B2;&#x89C2;&#x5730;&#x770B;&#xFF0C;&#x5982;&#x679C;<code>eval(..)</code>&#x6216;<code>with</code>&#x51FA;&#x73B0;&#xFF0C;&#x90A3;&#x4E48;&#x5B83; <em>&#x5C06;</em> &#x505A;&#x7684;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x4F18;&#x5316;&#x90FD;&#x4F1A;&#x53D8;&#x5F97;&#x6CA1;&#x6709;&#x610F;&#x4E49;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x5C31;&#x4F1A;&#x7B80;&#x5355;&#x5730;&#x6839;&#x672C;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x4F18;&#x5316;&#x3002;</p>
+<p>&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x51E0;&#x4E4E;&#x80AF;&#x5B9A;&#x4F1A;&#x8D8B;&#x4E8E;&#x8FD0;&#x884C;&#x7684;&#x66F4;&#x6162;&#xFF0C;&#x53EA;&#x56E0;&#x4E3A;&#x4F60;&#x5728;&#x4EE3;&#x7801;&#x7684;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x5F15;&#x5165;&#x4E86;&#x4E00;&#x4E2A;&#x4E86;<code>eval(..)</code>&#x6216;<code>with</code>&#x3002;&#x65E0;&#x8BBA; <em>&#x5F15;&#x64CE;</em> &#x5C06;&#x5728;&#x52AA;&#x529B;&#x9650;&#x5236;&#x8FD9;&#x4E9B;&#x60B2;&#x89C2;&#x81C6;&#x6D4B;&#x7684;&#x526F;&#x4F5C;&#x7528;&#x4E0A;&#x8868;&#x73B0;&#x5F97;&#x591A;&#x4E48;&#x806A;&#x660E;&#xFF0C;<strong>&#x90FD;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x529E;&#x6CD5;&#x53EF;&#x4EE5;&#x7ED5;&#x8FC7;&#x8FD9;&#x4E2A;&#x4E8B;&#x5B9E;&#xFF1A;&#x6CA1;&#x6709;&#x4F18;&#x5316;&#xFF0C;&#x4EE3;&#x7801;&#x5C31;&#x8FD0;&#x884C;&#x7684;&#x66F4;&#x6162;&#x3002;</strong></p>
+<h2 id="&#x590D;&#x4E60;">&#x590D;&#x4E60;</h2>
+<p>&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x610F;&#x5473;&#x7740;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x7531;&#x7F16;&#x5199;&#x65F6;&#x51FD;&#x6570;&#x88AB;&#x58F0;&#x660E;&#x7684;&#x4F4D;&#x7F6E;&#x7684;&#x51B3;&#x7B56;&#x5B9A;&#x4E49;&#x7684;&#x3002;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x8BCD;&#x6CD5;&#x5206;&#x6790;&#x9636;&#x6BB5;&#x5B9E;&#x8D28;&#x4E0A;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x6240;&#x6709;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x662F;&#x5728;&#x54EA;&#x91CC;&#x548C;&#x5982;&#x4F55;&#x58F0;&#x660E;&#x7684;&#xFF0C;&#x5E76;&#x5982;&#x6B64;&#x5728;&#x6267;&#x884C;&#x671F;&#x95F4;&#x9884;&#x6D4B;&#x5B83;&#x4EEC;&#x5C06;&#x5982;&#x4F55;&#x88AB;&#x67E5;&#x8BE2;&#x3002;</p>
+<p>&#x5728;JavaScript&#x4E2D;&#x6709;&#x4E24;&#x79CD;&#x673A;&#x5236;&#x53EF;&#x4EE5;&#x201C;&#x6B3A;&#x9A97;&#x201D;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#xFF1A;<code>eval(..)</code>&#x548C;<code>with</code>&#x3002;&#x524D;&#x8005;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5BF9;&#x4E00;&#x4E2A;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x58F0;&#x660E;&#x7684;&#x201C;&#x4EE3;&#x7801;&#x201D;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x6C42;&#x503C;&#xFF0C;&#x6765;&#xFF08;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#xFF09;&#x4FEE;&#x6539;&#x73B0;&#x5B58;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x540E;&#x8005;&#x5B9E;&#x8D28;&#x4E0A;&#x662F;&#x901A;&#x8FC7;&#x5C06;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x770B;&#x4F5C;&#x4E00;&#x4E2A;&#x201C;&#x4F5C;&#x7528;&#x57DF;&#x201D;&#xFF0C;&#x5E76;&#x5C06;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x770B;&#x4F5C;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#xFF08;&#x540C;&#x6837;&#xFF0C;&#x4E5F;&#x662F;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#xFF09;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5168;&#x65B0;&#x7684;&#x8BCD;&#x6CD5;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x673A;&#x5236;&#x7684;&#x7F3A;&#x70B9;&#x662F;&#xFF0C;&#x5B83;&#x538B;&#x5236;&#x4E86; <em>&#x5F15;&#x64CE;</em> &#x5728;&#x4F5C;&#x7528;&#x57DF;&#x67E5;&#x8BE2;&#x4E0A;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#x671F;&#x4F18;&#x5316;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x56E0;&#x4E3A; <em>&#x5F15;&#x64CE;</em> &#x4E0D;&#x5F97;&#x4E0D;&#x60B2;&#x89C2;&#x5730;&#x5047;&#x5B9A;&#x8FD9;&#x6837;&#x7684;&#x4F18;&#x5316;&#x662F;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x3002;&#x8FD9;&#x4E24;&#x79CD;&#x7279;&#x6027;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x4EE3;&#x7801; <em>&#x5C06;</em> &#x4F1A;&#x8FD0;&#x884C;&#x7684;&#x66F4;&#x6162;&#x3002;<strong>&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x3002;</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch1.html" class="navigation navigation-prev " aria-label="Previous page: 第一章：什么是作用域？">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch3.html" class="navigation navigation-next " aria-label="Next page: 第三章：函数与块儿作用域">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第二章：词法作用域","level":"1.4.3","depth":2,"next":{"title":"第三章：函数与块儿作用域","level":"1.4.4","depth":2,"path":"scope/ch3.md","ref":"scope/ch3.md","articles":[]},"previous":{"title":"第一章：什么是作用域？","level":"1.4.2","depth":2,"path":"scope/ch1.md","ref":"scope/ch1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"scope/ch2.md","mtime":"2017-04-06T10:18:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T03:02:39.575Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

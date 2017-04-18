@@ -1,0 +1,1425 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第四章: 混合（淆）“类”的对象 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch5.html" />
+    
+    
+    <link rel="prev" href="ch3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface.html">
+            
+                <a href="../preface.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../up/">
+            
+                <a href="../up/">
+            
+                    
+                    入门与进阶(up & going)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../up/toc.html">
+            
+                <a href="../up/toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../up/foreword.html">
+            
+                <a href="../up/foreword.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../up/ch1.html">
+            
+                <a href="../up/ch1.html">
+            
+                    
+                    第一章：进入编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../up/ch2.html">
+            
+                <a href="../up/ch2.html">
+            
+                    
+                    第二章：进入JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../up/ch3.html">
+            
+                <a href="../up/ch3.html">
+            
+                    
+                    第三章：进入YDKJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../up/apA.html">
+            
+                <a href="../up/apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../scope/">
+            
+                <a href="../scope/">
+            
+                    
+                    作用域与闭包(scope & closures)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../scope/toc.html">
+            
+                <a href="../scope/toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../scope/ch1.html">
+            
+                <a href="../scope/ch1.html">
+            
+                    
+                    第一章：什么是作用域？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../scope/ch2.html">
+            
+                <a href="../scope/ch2.html">
+            
+                    
+                    第二章：词法作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../scope/ch3.html">
+            
+                <a href="../scope/ch3.html">
+            
+                    
+                    第三章：函数与块儿作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../scope/ch4.html">
+            
+                <a href="../scope/ch4.html">
+            
+                    
+                    第四章：提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../scope/ch5.html">
+            
+                <a href="../scope/ch5.html">
+            
+                    
+                    第五章：作用域闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../scope/apA.html">
+            
+                <a href="../scope/apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../scope/apB.html">
+            
+                <a href="../scope/apB.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../scope/apC.html">
+            
+                <a href="../scope/apC.html">
+            
+                    
+                    附录C
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../scope/apD.html">
+            
+                <a href="../scope/apD.html">
+            
+                    
+                    附录D
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    this与对象原型(this & object prototypes)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="toc.html">
+            
+                <a href="toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="foreword.html">
+            
+                <a href="foreword.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    第一章: this是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    第二章: this豁然开朗！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    第三章: 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.6" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    第四章: 混合（淆）“类”的对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    第五章: 原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    第六章: 行为委托
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../types/">
+            
+                <a href="../types/">
+            
+                    
+                    类型与文法(types & grammar)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../types/toc.html">
+            
+                <a href="../types/toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../types/foreword.html">
+            
+                <a href="../types/foreword.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../types/ch1.html">
+            
+                <a href="../types/ch1.html">
+            
+                    
+                    第一章：类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../types/ch2.html">
+            
+                <a href="../types/ch2.html">
+            
+                    
+                    第二章：值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../types/ch3.html">
+            
+                <a href="../types/ch3.html">
+            
+                    
+                    第三章：原生类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../types/ch4.html">
+            
+                <a href="../types/ch4.html">
+            
+                    
+                    第四章：强制转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../types/ch5.html">
+            
+                <a href="../types/ch5.html">
+            
+                    
+                    第五章：文法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../types/apA.html">
+            
+                <a href="../types/apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../types/apB.html">
+            
+                <a href="../types/apB.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../async/">
+            
+                <a href="../async/">
+            
+                    
+                    异步与性能(async & performance)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../async/toc.html">
+            
+                <a href="../async/toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../async/foreword.html">
+            
+                <a href="../async/foreword.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../async/ch1.html">
+            
+                <a href="../async/ch1.html">
+            
+                    
+                    第一章: 异步:现在与稍后
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../async/ch2.html">
+            
+                <a href="../async/ch2.html">
+            
+                    
+                    第二章: 回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../async/ch3.html">
+            
+                <a href="../async/ch3.html">
+            
+                    
+                    第三章: Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../async/ch4.html">
+            
+                <a href="../async/ch4.html">
+            
+                    
+                    第四章: Generator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../async/ch5.html">
+            
+                <a href="../async/ch5.html">
+            
+                    
+                    第五章: 程序性能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../async/ch6.html">
+            
+                <a href="../async/ch6.html">
+            
+                    
+                    第六章: 基准分析与调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../async/apA.html">
+            
+                <a href="../async/apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../async/apB.html">
+            
+                <a href="../async/apB.html">
+            
+                    
+                    附录B
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../async/apC.html">
+            
+                <a href="../async/apC.html">
+            
+                    
+                    附录C
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../es6/">
+            
+                <a href="../es6/">
+            
+                    
+                    ES6与未来(es6 & beyond)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../es6/toc.html">
+            
+                <a href="../es6/toc.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../es6/foreword.html">
+            
+                <a href="../es6/foreword.html">
+            
+                    
+                    序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../es6/ch1.html">
+            
+                <a href="../es6/ch1.html">
+            
+                    
+                    第一章：ES？现在与未来
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../es6/ch2.html">
+            
+                <a href="../es6/ch2.html">
+            
+                    
+                    第二章：语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../es6/ch3.html">
+            
+                <a href="../es6/ch3.html">
+            
+                    
+                    第三章：组织
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../es6/ch4.html">
+            
+                <a href="../es6/ch4.html">
+            
+                    
+                    第四章：异步流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../es6/ch5.html">
+            
+                <a href="../es6/ch5.html">
+            
+                    
+                    第五章：集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../es6/ch6.html">
+            
+                <a href="../es6/ch6.html">
+            
+                    
+                    第六章：新增API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../es6/ch7.html">
+            
+                <a href="../es6/ch7.html">
+            
+                    
+                    第七章：元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../es6/ch8.html">
+            
+                <a href="../es6/ch8.html">
+            
+                    
+                    第八章：ES6以后
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../es6/apA.html">
+            
+                <a href="../es6/apA.html">
+            
+                    
+                    附录A
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第四章: 混合（淆）“类”的对象</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4F60;&#x4E0D;&#x61C2;js-this-&#x4E0E;&#x5BF9;&#x8C61;&#x539F;&#x578B;">&#x4F60;&#x4E0D;&#x61C2;JS: <em>this</em> &#x4E0E;&#x5BF9;&#x8C61;&#x539F;&#x578B;</h1>
+<h1 id="&#x7B2C;&#x56DB;&#x7AE0;-&#x6DF7;&#x5408;&#xFF08;&#x6DC6;&#xFF09;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;">&#x7B2C;&#x56DB;&#x7AE0;: &#x6DF7;&#x5408;&#xFF08;&#x6DC6;&#xFF09;&#x201C;&#x7C7B;&#x201D;&#x7684;&#x5BF9;&#x8C61;</h1>
+<p>&#x63A5;&#x7740;&#x6211;&#x4EEC;&#x4E0A;&#x4E00;&#x7AE0;&#x5BF9;&#x5BF9;&#x8C61;&#x7684;&#x63A2;&#x7D22;&#xFF0C;&#x6211;&#x4EEC;&#x5F88;&#x81EA;&#x7136;&#x7684;&#x5C06;&#x6CE8;&#x610F;&#x529B;&#x8F6C;&#x79FB;&#x5230;&#x201C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#xFF08;OO&#xFF09;&#x7F16;&#x7A0B;&#x201D;&#xFF0C;&#x4E0E;&#x201C;&#x7C7B;&#xFF08;class&#xFF09;&#x201D;&#x3002;&#x6211;&#x4EEC;&#x5148;&#x5C06;&#x201C;&#x9762;&#x5411;&#x7C7B;&#x201D;&#x4F5C;&#x4E3A;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x6765;&#x770B;&#x770B;&#xFF0C;&#x4E4B;&#x540E;&#x6211;&#x4EEC;&#x518D;&#x8003;&#x5BDF;&#x201C;&#x7C7B;&#x201D;&#x7684;&#x673A;&#x5236;&#xFF1A;&#x201C;&#x5B9E;&#x4F8B;&#x5316;&#xFF08;instantiation&#xFF09;&#x201D;, &#x201C;&#x7EE7;&#x627F;&#xFF08;inheritance&#xFF09;&#x201D;&#x4E0E;&#x201C;&#x76F8;&#x5BF9;&#x591A;&#x6001;(relative polymorphism&#xFF09;&#x201D;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x770B;&#x5230;&#xFF0C;&#x8FD9;&#x4E9B;&#x6982;&#x5FF5;&#x5E76;&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x81EA;&#x7136;&#x5730;&#x6620;&#x5C04;&#x5230;JS&#x7684;&#x5BF9;&#x8C61;&#x673A;&#x5236;&#x4E0A;&#xFF0C;&#x4EE5;&#x53CA;&#x8BB8;&#x591A;JavaScript&#x5F00;&#x53D1;&#x8005;&#x4E3A;&#x4E86;&#x514B;&#x670D;&#x8FD9;&#x4E9B;&#x6311;&#x6218;&#x6240;&#x505A;&#x7684;&#x52AA;&#x529B;&#xFF08;mixins&#x7B49;&#xFF09;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x8FD9;&#x4E00;&#x7AE0;&#x82B1;&#x4E86;&#x76F8;&#x5F53;&#x4E00;&#x90E8;&#x5206;&#x65F6;&#x95F4;&#xFF08;&#x524D;&#x4E00;&#x534A;&#xFF01;&#xFF09;&#x5728;&#x7740;&#x91CD;&#x89E3;&#x91CA;&#x201C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x201D;&#x7406;&#x8BBA;&#x4E0A;&#x3002;&#x5728;&#x540E;&#x534A;&#x90E8;&#x5206;&#x8BA8;&#x8BBA;&#x201C;Mixins&#xFF08;&#x6DF7;&#x5408;&#xFF09;&#x201D;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x6700;&#x7EC8;&#x4F1A;&#x5C06;&#x8FD9;&#x4E9B;&#x7406;&#x8BBA;&#x4E0E;&#x771F;&#x5B9E;&#x4E14;&#x5B9E;&#x9645;&#x7684;JavaScript&#x4EE3;&#x7801;&#x8054;&#x7CFB;&#x8D77;&#x6765;&#x3002;&#x4F46;&#x662F;&#x8FD9;&#x91CC;&#x9996;&#x5148;&#x8981;&#x8E5A;&#x8FC7;&#x8BB8;&#x591A;&#x6982;&#x5FF5;&#x548C;&#x5047;&#x60F3;&#x4EE3;&#x7801;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x522B;&#x8FF7;&#x8DEF;&#x4E86; &#x2014;&#x2014; &#x575A;&#x6301;&#x4E0B;&#x53BB;&#xFF01;</p>
+<h2 id="&#x7C7B;&#x7406;&#x8BBA;">&#x7C7B;&#x7406;&#x8BBA;</h2>
+<p>&#x201C;&#x7C7B;/&#x7EE7;&#x627F;&#x201D;&#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x79CD;&#x7279;&#x5B9A;&#x7684;&#x4EE3;&#x7801;&#x7EC4;&#x7EC7;&#x548C;&#x7ED3;&#x6784;&#x5F62;&#x5F0F;&#x2014;&#x2014;&#x4E00;&#x79CD;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x8F6F;&#x4EF6;&#x4E2D;&#x5BF9;&#x771F;&#x5B9E;&#x4E16;&#x754C;&#x7684;&#x5EFA;&#x6A21;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>OO&#x6216;&#x8005;&#x9762;&#x5411;&#x7C7B;&#x7684;&#x7F16;&#x7A0B;&#x5F3A;&#x8C03;&#x6570;&#x636E;&#x548C;&#x64CD;&#x4F5C;&#x5B83;&#x7684;&#x884C;&#x4E3A;&#x4E4B;&#x95F4;&#x6709;&#x56FA;&#x6709;&#x7684;&#x8054;&#x7CFB;&#xFF08;&#x5F53;&#x7136;&#xFF0C;&#x4F9D;&#x6570;&#x636E;&#x7684;&#x7C7B;&#x578B;&#x548C;&#x6027;&#x8D28;&#x4E0D;&#x540C;&#x800C;&#x4E0D;&#x540C;&#xFF01;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x5408;&#x7406;&#x7684;&#x8BBE;&#x8BA1;&#x662F;&#x5C06;&#x6570;&#x636E;&#x548C;&#x884C;&#x4E3A;&#x6253;&#x5305;&#x5728;&#x4E00;&#x8D77;&#xFF08;&#x4E5F;&#x79F0;&#x4E3A;&#x5C01;&#x88C5;&#xFF09;&#x3002;&#x8FD9;&#x6709;&#x65F6;&#x5728;&#x6B63;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x79D1;&#x5B66;&#x4E2D;&#x79F0;&#x4E3A;&#x201C;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x201D;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x6216;&#x77ED;&#x8BED;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x5B57;&#x7B26;&#x901A;&#x5E38;&#x79F0;&#x4E3A;&#x201C;string&#xFF08;&#x5B57;&#x7B26;&#x4E32;&#xFF09;&#x201D;&#x3002;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x5C31;&#x662F;&#x6570;&#x636E;&#x3002;&#x4F46;&#x4F60;&#x51E0;&#x4E4E;&#x4ECE;&#x6765;&#x4E0D;&#x5173;&#x5FC3;&#x6570;&#x636E;&#xFF0C;&#x4F60;&#x603B;&#x662F;&#x60F3;&#x5BF9;&#x6570;&#x636E; <em>&#x505A;&#x4E8B;&#x60C5;</em>&#xFF0C; &#x6240;&#x4EE5;&#x53EF;&#x4EE5; <em>&#x5411;</em> &#x6570;&#x636E;&#x5B9E;&#x65BD;&#x7684;&#x884C;&#x4E3A;&#xFF08;&#x8BA1;&#x7B97;&#x5B83;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x5728;&#x672B;&#x5C3E;&#x6DFB;&#x52A0;&#x6570;&#x636E;&#xFF0C;&#x68C0;&#x7D22;&#xFF0C;&#x7B49;&#x7B49;&#xFF09;&#x90FD;&#x88AB;&#x8BBE;&#x8BA1;&#x6210;&#x4E3A;<code>String</code>&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4EFB;&#x4F55;&#x7ED9;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x90FD;&#x662F;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x9F50;&#x7684;&#x96C6;&#x5408;&#x5305;&#x88C5;&#xFF1A;&#x5B57;&#x7B26;&#x6570;&#x636E;&#x548C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5BF9;&#x5B83;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x7C7B;&#x8FD8;&#x9690;&#x542B;&#x7740;&#x5BF9;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x4E00;&#x79CD; <em>&#x5206;&#x7C7B;</em> &#x65B9;&#x6CD5;&#x3002;&#x6211;&#x4EEC;&#x8FD9;&#x4E48;&#x505A;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#xFF0C;&#x5C06;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x7684;&#x7ED3;&#x6784;&#x8003;&#x8651;&#x4E3A;&#x4E00;&#x4E2A;&#x66F4;&#x52A0;&#x6CDB;&#x5316;&#x7684;&#x57FA;&#x7840;&#x5B9A;&#x4E49;&#x7684;&#x5177;&#x4F53;&#x79CD;&#x7C7B;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x6700;&#x5E38;&#x88AB;&#x5F15;&#x7528;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x63A2;&#x7D22;&#x8FD9;&#x79CD;&#x5206;&#x7C7B;&#x5904;&#x7406;&#x3002;&#x4E00;&#x8F86; <em>&#x8F66;</em> &#x53EF;&#x4EE5;&#x88AB;&#x63CF;&#x8FF0;&#x4E3A;&#x4E00;&#x201C;&#x7C7B;&#x201D;&#x66F4;&#x6CDB;&#x5316;&#x7684;&#x4E1C;&#x897F;&#x2014;&#x2014;<em>&#x8F7D;&#x5177;</em>&#x2014;&#x2014;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5728;&#x8F6F;&#x4EF6;&#x4E2D;&#x901A;&#x8FC7;&#x5B9A;&#x4E49;<code>Vehicle</code>&#x7C7B;&#x548C;<code>Car</code>&#x7C7B;&#x6765;&#x6A21;&#x578B;&#x5316;&#x8FD9;&#x79CD;&#x5173;&#x7CFB;&#x3002;</p>
+<p><code>Vehicle</code>&#x7684;&#x5B9A;&#x4E49;&#x53EF;&#x80FD;&#x4F1A;&#x5305;&#x542B;&#x50CF;&#x52A8;&#x529B;&#xFF08;&#x5F15;&#x64CE;&#x7B49;&#xFF09;&#xFF0C;&#x8F7D;&#x4EBA;&#x80FD;&#x529B;&#x7B49;&#x7B49;&#xFF0C;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x884C;&#x4E3A;&#x3002;&#x6211;&#x4EEC;&#x5728;<code>Vehicle</code>&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x90FD;&#x662F;&#x6240;&#x6709;&#xFF08;&#x6216;&#x5927;&#x591A;&#x6570;&#xFF09;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x8F7D;&#x5177;&#xFF08;&#x98DE;&#x673A;&#xFF0C;&#x706B;&#x8F66;&#xFF0C;&#x673A;&#x52A8;&#x8F66;&#xFF09;&#x90FD;&#x5171;&#x540C;&#x62E5;&#x6709;&#x7684;&#x4E1C;&#x897F;&#x3002;</p>
+<p>&#x5728;&#x6211;&#x4EEC;&#x7684;&#x8F6F;&#x4EF6;&#x4E2D;&#x4E3A;&#x6BCF;&#x4E00;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x8F7D;&#x5177;&#x4E00;&#x6B21;&#x53C8;&#x4E00;&#x6B21;&#x5730;&#x91CD;&#x5B9A;&#x4E49;&#x201C;&#x8F7D;&#x4EBA;&#x80FD;&#x529B;&#x201D;&#x8FD9;&#x4E2A;&#x57FA;&#x672C;&#x6027;&#x8D28;&#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x9053;&#x7406;&#x3002;&#x53CD;&#x800C;&#xFF0C;&#x6211;&#x4EEC;&#x5728;<code>Vehicle</code>&#x4E2D;&#x628A;&#x8FD9;&#x4E2A;&#x80FD;&#x529B;&#x5B9A;&#x4E49;&#x4E00;&#x6B21;&#xFF0C;&#x4E4B;&#x540E;&#x5F53;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;<code>Car</code>&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x7B80;&#x5355;&#x5730;&#x6307;&#x51FA;&#x5B83;&#x4ECE;&#x57FA;&#x672C;&#x7684;<code>Vehicle</code>&#x5B9A;&#x4E49;&#x4E2D;&#x201C;&#x7EE7;&#x627F;&#x201D;&#xFF08;&#x6216;&#x201C;&#x6269;&#x5C55;&#x201D;&#xFF09;&#x3002;<code>Car</code>&#x7684;&#x5B9A;&#x4E49;&#x5C31;&#x662F;&#x7279;&#x5316;&#x4E86;&#x4E00;&#x822C;&#x7684;<code>Vehicle</code>&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x867D;&#x7136;<code>Vehicle</code>&#x548C;<code>Car</code>&#x7528;&#x65B9;&#x6CD5;&#x7684;&#x5F62;&#x5F0F;&#x96C6;&#x7EA6;&#x5730;&#x5B9A;&#x4E49;&#x4E86;&#x884C;&#x4E3A;&#xFF0C;&#x4F46;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5C31;&#x50CF;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;&#x8F66;&#x724C;&#x53F7;&#x4E00;&#x6837;&#x5C5E;&#x4E8E;&#x4E00;&#x8F86;&#x5177;&#x4F53;&#x7684;&#x8F66;&#x3002;</p>
+<p><strong>&#x8FD9;&#x6837;&#xFF0C;&#x7C7B;&#xFF0C;&#x7EE7;&#x627F;&#xFF0C;&#x548C;&#x5B9E;&#x4F8B;&#x5316;&#x5C31;&#x8BDE;&#x751F;&#x4E86;&#x3002;</strong></p>
+<p>&#x53E6;&#x4E00;&#x4E2A;&#x5173;&#x4E8E;&#x7C7B;&#x7684;&#x5173;&#x952E;&#x6982;&#x5FF5;&#x662F;&#x201C;&#x591A;&#x6001;&#xFF08;polymorphism&#xFF09;&#x201D;&#xFF0C;&#x5B83;&#x63CF;&#x8FF0;&#x8FD9;&#x6837;&#x7684;&#x60F3;&#x6CD5;&#xFF1A;&#x4E00;&#x4E2A;&#x6765;&#x81EA;&#x4E8E;&#x7236;&#x7C7B;&#x7684;&#x6CDB;&#x5316;&#x884C;&#x4E3A;&#x53EF;&#x4EE5;&#x88AB;&#x5B50;&#x7C7B;&#x8986;&#x76D6;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x5B83;&#x66F4;&#x52A0;&#x5177;&#x4F53;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x76F8;&#x5BF9;&#x591A;&#x6001;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x8986;&#x76D6;&#x884C;&#x4E3A;&#x4E2D;&#x5F15;&#x7528;&#x57FA;&#x7840;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x7C7B;&#x7406;&#x8BBA;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x7236;&#x7C7B;&#x548C;&#x5B50;&#x7C7B;&#x5BF9;&#x76F8;&#x540C;&#x7684;&#x884C;&#x4E3A;&#x5171;&#x4EAB;&#x540C;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#x540D;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E8E;&#x5B50;&#x7C7B;&#xFF08;&#x5DEE;&#x5F02;&#x5316;&#x5730;&#xFF09;&#x8986;&#x76D6;&#x7236;&#x7C7B;&#x3002;&#x6211;&#x4EEC;&#x5373;&#x5C06;&#x770B;&#x5230;&#xFF0C;&#x5728;&#x4F60;&#x7684;JavaScript&#x4EE3;&#x7801;&#x4E2D;&#x8FD9;&#x4E48;&#x505A;&#x4F1A;&#x5BFC;&#x81F4;&#x79CD;&#x79CD;&#x56F0;&#x96BE;&#x548C;&#x8106;&#x5F31;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<h3 id="&#x7C7B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;">&quot;&#x7C7B;&quot;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;</h3>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x4ECE;&#x6CA1;&#x628A;&#x7C7B;&#x5F53;&#x505A;&#x4E00;&#x79CD;&#x201C;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x201D;&#x8003;&#x8651;&#x8FC7;&#xFF0C;&#x56E0;&#x4E3A;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x662F;&#x5173;&#x4E8E;&#x6D41;&#x884C;&#x7684;&#x201C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x201D;&#x7684;&#x8BA8;&#x8BBA;&#xFF0C;&#x6BD4;&#x5982;&#x201C;&#x8FED;&#x4EE3;&#x5668;&#xFF08;Iterator&#xFF09;&#x201D;&#xFF0C;&#x201C;&#x89C2;&#x5BDF;&#x8005;&#xFF08;Observer&#xFF09;&#x201D;&#xFF0C;&#x201C;&#x5DE5;&#x5382;&#xFF08;Factory&#xFF09;&#x201D;&#xFF0C;&#x201C;&#x5355;&#x4F8B;&#xFF08;Singleton&#xFF09;&#x201D;&#x7B49;&#x7B49;&#x3002;&#x5F53;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x8868;&#x73B0;&#x65F6;&#xFF0C;&#x51E0;&#x4E4E;&#x53EF;&#x4EE5;&#x5047;&#x5B9A;OO&#x7684;&#x7C7B;&#x662F;&#x6211;&#x4EEC;&#x5B9E;&#x73B0;&#x6240;&#x6709;&#xFF08;&#x9AD8;&#x7EA7;&#xFF09;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x5E95;&#x5C42;&#x673A;&#x5236;&#xFF0C;&#x597D;&#x50CF;&#x5BF9;&#x6240;&#x6709;&#x4EE3;&#x7801;&#x6765;&#x8BF4;OO&#x662F;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x7684;&#x57FA;&#x7840;&#x3002;</p>
+<p>&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x5728;&#x7F16;&#x7A0B;&#x65B9;&#x9762;&#x63A5;&#x53D7;&#x8FC7;&#x7684;&#x6B63;&#x89C4;&#x6559;&#x80B2;&#x7684;&#x6C34;&#x5E73;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x542C;&#x8BF4;&#x8FC7;&#x201C;&#x8FC7;&#x7A0B;&#x5F0F;&#x7F16;&#x7A0B;&#xFF08;procedural programming&#xFF09;&#x201D;&#xFF1A;&#x4E00;&#x79CD;&#x4E0D;&#x7528;&#x4EFB;&#x4F55;&#x9AD8;&#x7EA7;&#x62BD;&#x8C61;&#xFF0C;&#x4EC5;&#x4EC5;&#x7531;&#x8FC7;&#x7A0B;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x51FD;&#x6570;&#xFF09;&#x8C03;&#x7528;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x6765;&#x6784;&#x6210;&#x7684;&#x63CF;&#x8FF0;&#x4EE3;&#x7801;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x4F60;&#x53EF;&#x80FD;&#x88AB;&#x544A;&#x77E5;&#x8FC7;&#xFF0C;&#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x5C06;&#x8FC7;&#x7A0B;&#x5F0F;&#x98CE;&#x683C;&#x7684;&#x201C;&#x9762;&#x6761;&#x4EE3;&#x7801;&#x201D;&#x8F6C;&#x6362;&#x4E3A;&#x7ED3;&#x6784;&#x826F;&#x597D;&#xFF0C;&#x7EC4;&#x7EC7;&#x826F;&#x597D;&#x4EE3;&#x7801;&#x7684; <em>&#x6070;&#x5F53;</em> &#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6709;&#x201C;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#xFF08;functional programming&#xFF09;&#x201D;&#x7684;&#x7ECF;&#x9A8C;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x77E5;&#x9053;&#x7C7B;&#x53EA;&#x662F;&#x51E0;&#x79CD;&#x5E38;&#x89C1;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#x3002;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x4EBA;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x4F60;&#x95EE;&#x81EA;&#x5DF1;&#xFF0C;&#x7C7B;&#x662F;&#x5426;&#x771F;&#x7684;&#x662F;&#x4EE3;&#x7801;&#x7684;&#x6839;&#x672C;&#x57FA;&#x7840;&#xFF0C;&#x6216;&#x8005;&#x5B83;&#x4EEC;&#x662F;&#x5728;&#x4EE3;&#x7801;&#x9876;&#x5C42;&#x4E0A;&#x7684;&#x9009;&#x62E9;&#x6027;&#x62BD;&#x8C61;&#x3002;</p>
+<p>&#x6709;&#x4E9B;&#x8BED;&#x8A00;&#xFF08;&#x6BD4;&#x5982;Java&#xFF09;&#x4E0D;&#x7ED9;&#x4F60;&#x9009;&#x62E9;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x6839;&#x672C;&#x6CA1;&#x4EC0;&#x4E48; <em>&#x9009;&#x62E9;&#x6027;</em>&#x2014;&#x2014;&#x4E00;&#x5207;&#x90FD;&#x662F;&#x7C7B;&#x3002;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x5982;C/C++&#x6216;PHP&#x540C;&#x65F6;&#x7ED9;&#x4F60;&#x8FC7;&#x7A0B;&#x5F0F;&#x548C;&#x9762;&#x5411;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x54EA;&#x79CD;&#x98CE;&#x683C;&#x5408;&#x9002;&#x6216;&#x6DF7;&#x5408;&#x98CE;&#x683C;&#x4E0A;&#xFF0C;&#x7559;&#x7ED9;&#x5F00;&#x53D1;&#x8005;&#x66F4;&#x591A;&#x9009;&#x62E9;&#x3002;</p>
+<h3 id="javascript&#x7684;&#x7C7B;">JavaScript&#x7684;&#x201C;&#x7C7B;&#x201D;</h3>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x4E0A;JavaScript&#x5C5E;&#x4E8E;&#x54EA;&#x4E00;&#x8FB9;&#xFF1F;JS&#x62E5;&#x6709; <em>&#x4E00;&#x4E9B;</em> &#x50CF;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#x5143;&#x7D20;&#xFF08;&#x6BD4;&#x5982;<code>new</code>&#x548C;<code>instanceof</code>&#xFF09;&#x6709;&#x4E00;&#x9635;&#x5B50;&#x4E86;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x6700;&#x8FD1;&#x7684;ES6&#x4E2D;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x8FFD;&#x52A0;&#x7684;&#xFF0C;&#x6BD4;&#x5982;<code>class</code>&#x5173;&#x952E;&#x5B57;&#xFF08;&#x89C1;&#x9644;&#x5F55;A&#xFF09;&#x3002;</p>
+<p>&#x4F46;&#x8FD9;&#x610F;&#x5473;&#x7740;JavaScript&#x5B9E;&#x9645;&#x4E0A; <em>&#x62E5;&#x6709;</em> &#x7C7B;&#x5417;&#xFF1F;&#x76F4;&#x767D;&#x4E14;&#x7B80;&#x5355;&#xFF1A;<strong>&#x6CA1;&#x6709;&#x3002;</strong></p>
+<p>&#x7531;&#x4E8E;&#x7C7B;&#x662F;&#x4E00;&#x79CD;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF0C;&#x4F60; <em>&#x53EF;&#x4EE5;</em>&#xFF0C;&#x7528;&#x76F8;&#x5F53;&#x7684;&#x52AA;&#x529B;&#xFF08;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x672C;&#x7AE0;&#x5269;&#x4E0B;&#x7684;&#x90E8;&#x5206;&#x770B;&#x5230;&#xFF09;&#xFF0C;&#x8FD1;&#x4F3C;&#x5B9E;&#x73B0;&#x5F88;&#x591A;&#x7ECF;&#x5178;&#x7C7B;&#x7684;&#x529F;&#x80FD;&#x3002;JS&#x5728;&#x901A;&#x8FC7;&#x63D0;&#x4F9B;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x6765;&#x52AA;&#x529B;&#x6EE1;&#x8DB3;&#x7528;&#x7C7B;&#x8FDB;&#x884C;&#x8BBE;&#x8BA1;&#x7684;&#x6781;&#x5176;&#x5E7F;&#x6CDB;&#x7684;&#x6E34;&#x671B;&#x3002;</p>
+<p>&#x867D;&#x7136;&#x6211;&#x4EEC;&#x597D;&#x50CF;&#x6709;&#x4E86;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x7C7B;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x4F46;&#x662F;&#x597D;&#x50CF;JavaScript&#x673A;&#x5236;&#x5728;&#x62B5;&#x6297;&#x4F60;&#x4F7F;&#x7528; <em>&#x7C7B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;</em>&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x5E95;&#x5C42;&#xFF0C;&#x8FD9;&#x4E9B;&#x4F60;&#x6B63;&#x5728;&#x4E0A;&#x9762;&#x5DE5;&#x4F5C;&#x7684;&#x673A;&#x5236;&#x8FD0;&#x884C;&#x7684;&#x5341;&#x5206;&#x4E0D;&#x540C;&#x3002;&#x8BED;&#x6CD5;&#x7CD6;&#x548C;&#xFF08;&#x6781;&#x5176;&#x5E7F;&#x6CDB;&#x88AB;&#x4F7F;&#x7528;&#x7684;&#xFF09;JS&#x201C;Class&#x201D;&#x5E93;&#x5E9F;&#x4E86;&#x5F88;&#x5927;&#x529B;&#x6C14;&#x6765;&#x628A;&#x8FD9;&#x4E9B;&#x771F;&#x5B9E;&#x60C5;&#x51B5;&#x5BF9;&#x4F60;&#x9690;&#x85CF;&#x8D77;&#x6765;&#xFF0C;&#x4F46;&#x4F60;&#x8FDF;&#x65E9;&#x4F1A;&#x9762;&#x5BF9;&#x73B0;&#x5B9E;&#xFF1A;&#x4F60;&#x5728;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x9047;&#x5230;&#x7684; <em>&#x7C7B;</em> &#x548C;&#x4F60;&#x5728;JS&#x4E2D;&#x6A21;&#x62DF;&#x7684;&#x201C;&#x7C7B;&#x201D;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x603B;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x7C7B;&#x662F;&#x8F6F;&#x4EF6;&#x8BBE;&#x8BA1;&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#x53EF;&#x9009;&#x6A21;&#x5F0F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5728;JavaScript&#x4E2D;&#x4F7F;&#x7528;&#x6216;&#x4E0D;&#x4F7F;&#x7528;&#x5B83;&#x3002;&#x56E0;&#x4E3A;&#x8BB8;&#x591A;&#x5F00;&#x53D1;&#x8005;&#x90FD;&#x5BF9;&#x9762;&#x5411;&#x7C7B;&#x7684;&#x8F6F;&#x4EF6;&#x8BBE;&#x8BA1;&#x60C5;&#x6709;&#x72EC;&#x949F;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x672C;&#x7AE0;&#x5269;&#x4E0B;&#x7684;&#x90E8;&#x5206;&#x4E2D;&#x63A2;&#x7D22;&#x4E00;&#x4E0B;&#xFF0C;&#x4E3A;&#x4E86;&#x4F7F;&#x7528;JS&#x63D0;&#x4F9B;&#x7684;&#x4E1C;&#x897F;&#x7EF4;&#x62A4;&#x7C7B;&#x7684;&#x5E7B;&#x89C9;&#x8981;&#x4ED8;&#x51FA;&#x4EC0;&#x4E48;&#x4EE3;&#x4EF7;&#xFF0C;&#x548C;&#x6211;&#x4EEC;&#x7ECF;&#x5386;&#x7684;&#x75DB;&#x82E6;&#x3002;</p>
+<h2 id="&#x7C7B;&#x673A;&#x5236;">&#x7C7B;&#x673A;&#x5236;</h2>
+<p>&#x5728;&#x8BB8;&#x591A;&#x9762;&#x5411;&#x7C7B;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x201C;&#x6807;&#x51C6;&#x5E93;&#x201D;&#x90FD;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x53EB;&#x201C;&#x6808;&#x201D;&#xFF08;&#x538B;&#x6808;&#xFF0C;&#x5F39;&#x51FA;&#x7B49;&#xFF09;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x7528;&#x4E00;&#x4E2A;<code>Stack</code>&#x7C7B;&#x8868;&#x793A;&#x3002;&#x8FD9;&#x4E2A;&#x7C7B;&#x62E5;&#x6709;&#x4E00;&#x7EC4;&#x53D8;&#x91CF;&#x6765;&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF0C;&#x8FD8;&#x62E5;&#x6709;&#x4E00;&#x7EC4;&#x53EF;&#x516C;&#x5F00;&#x8BBF;&#x95EE;&#x7684;&#x884C;&#x4E3A;&#xFF08;&#x201C;&#x65B9;&#x6CD5;&#x201D;&#xFF09;&#xFF0C;&#x8FD9;&#x4E9B;&#x884C;&#x4E3A;&#x4F7F;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x6709;&#x80FD;&#x529B;&#x4E0E;&#xFF08;&#x9690;&#x85CF;&#x7684;&#xFF09;&#x6570;&#x636E;&#x4E92;&#x52A8;&#xFF08;&#x6DFB;&#x52A0;&#x6216;&#x79FB;&#x9664;&#x6570;&#x636E;&#x7B49;&#x7B49;&#xFF09;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x4F60;&#x4E0D;&#x662F;&#x76F4;&#x63A5;&#x5728;<code>Stack</code>&#x4E0A;&#x64CD;&#x4F5C;&#xFF08;&#x9664;&#x975E;&#x5236;&#x9020;&#x4E00;&#x4E2A; <strong>&#x9759;&#x6001;&#x7684;</strong> &#x7C7B;&#x6210;&#x5458;&#x5F15;&#x7528;&#xFF0C;&#x4F46;&#x8FD9;&#x8D85;&#x51FA;&#x4E86;&#x6211;&#x4EEC;&#x8981;&#x8BA8;&#x8BBA;&#x7684;&#x8303;&#x56F4;&#xFF09;&#x3002;<code>Stack</code>&#x7C7B;&#x4EC5;&#x4EC5;&#x662F; <em>&#x4EFB;&#x4F55;</em> &#x7684;&#x201C;&#x6808;&#x201D;&#x90FD;&#x4F1A;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x7684;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x89E3;&#x91CA;&#xFF0C;&#x4F46;&#x5B83;&#x672C;&#x8EAB;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x201C;&#x6808;&#x201D;&#x3002;&#x4E3A;&#x4E86;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5BF9;&#x4E4B;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x7684;&#x5B9E;&#x5728;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x4F60;&#x5FC5;&#x987B; <strong>&#x5B9E;&#x4F8B;&#x5316;</strong> &#x8FD9;&#x4E2A;<code>Stack</code>&#x7C7B;&#x3002;</p>
+<h3 id="&#x5EFA;&#x7B51;&#x7269;">&#x5EFA;&#x7B51;&#x7269;</h3>
+<p>&#x4F20;&#x7EDF;&#x7684;&quot;&#x7C7B;&#xFF08;class&#xFF09;&quot;&#x548C;&quot;&#x5B9E;&#x4F8B;&#xFF08;instance&#xFF09;&quot;&#x7684;&#x6BD4;&#x62DF;&#x6E90;&#x81EA;&#x4E8E;&#x5EFA;&#x7B51;&#x7269;&#x7684;&#x5EFA;&#x9020;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x5EFA;&#x7B51;&#x5E08;&#x4F1A;&#x89C4;&#x5212;&#x51FA;&#x4E00;&#x680B;&#x5EFA;&#x7B51;&#x7684;&#x6240;&#x6709;&#x6027;&#x8D28;&#xFF1A;&#x591A;&#x5BBD;&#xFF0C;&#x591A;&#x9AD8;&#xFF0C;&#x5728;&#x54EA;&#x91CC;&#x6709;&#x591A;&#x5C11;&#x7A97;&#x6237;&#xFF0C;&#x751A;&#x81F3;&#x5899;&#x58C1;&#x548C;&#x5929;&#x82B1;&#x677F;&#x7528;&#x4EC0;&#x4E48;&#x6750;&#x6599;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x5979;&#x5E76;&#x4E0D;&#x5173;&#x5FC3;&#x5EFA;&#x7B51;&#x7269;&#x5C06;&#x4F1A;&#x88AB;&#x5EFA;&#x9020;&#x5728; <em>&#x54EA;&#x91CC;</em>&#xFF0C;&#x5979;&#x4E5F;&#x4E0D;&#x5173;&#x5FC3;&#x6709; <em>&#x591A;&#x5C11;</em> &#x8FD9;&#x680B;&#x5EFA;&#x7B51;&#x7684;&#x62F7;&#x8D1D;&#x5C06;&#x88AB;&#x5EFA;&#x9020;&#x3002;</p>
+<p>&#x540C;&#x65F6;&#x5979;&#x4E5F;&#x4E0D;&#x5173;&#x5FC3;&#x8FD9;&#x680B;&#x5EFA;&#x7B51;&#x7684;&#x5185;&#x5BB9;&#x2014;&#x2014;&#x5BB6;&#x5177;&#xFF0C;&#x5899;&#x7EB8;&#xFF0C;&#x540A;&#x6247;&#x7B49;&#x7B49;&#x2014;&#x2014;&#x5979;&#x4EC5;&#x5173;&#x5FC3;&#x5EFA;&#x7B51;&#x7269;&#x542B;&#x6709;&#x4F55;&#x79CD;&#x7ED3;&#x6784;&#x3002;</p>
+<p>&#x5979;&#x751F;&#x4EA7;&#x7684;&#x5EFA;&#x7B51;&#x5B66;&#x4E0A;&#x7684;&#x84DD;&#x56FE;&#x4EC5;&#x4EC5;&#x662F;&#x5EFA;&#x7B51;&#x7269;&#x7684;&#x201C;&#x65B9;&#x6848;&#x201D;&#x3002;&#x5B83;&#x4EEC;&#x4E0D;&#x5B9E;&#x9645;&#x6784;&#x6210;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9E;&#x5728;&#x8FDB;&#x5165;&#x5176;&#x4E2D;&#x5E76;&#x5750;&#x4E0B;&#x7684;&#x5EFA;&#x7B51;&#x7269;&#x3002;&#x4E3A;&#x4E86;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5EFA;&#x7B51;&#x5DE5;&#x3002;&#x5EFA;&#x7B51;&#x5DE5;&#x4F1A;&#x62FF;&#x8D70;&#x65B9;&#x6848;&#x5E76;&#x7CBE;&#x786E;&#x5730;&#x4F9D;&#x7167;&#x5B83;&#x4EEC; <em>&#x5EFA;&#x9020;</em> &#x8FD9;&#x680B;&#x5EFA;&#x7B51;&#x7269;&#x3002;&#x5728;&#x771F;&#x6B63;&#x7684;&#x610F;&#x4E49;&#x4E0A;&#xFF0C;&#x4ED6;&#x662F;&#x5728;&#x5C06;&#x65B9;&#x6848;&#x4E2D;&#x610F;&#x56FE;&#x7684;&#x6027;&#x8D28; <em>&#x62F7;&#x8D1D;</em> &#x5230;&#x7269;&#x7406;&#x5EFA;&#x7B51;&#x7269;&#x4E2D;&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x5B8C;&#x6210;&#xFF0C;&#x8FD9;&#x680B;&#x5EFA;&#x7B51;&#x5C31;&#x662F;&#x84DD;&#x56FE;&#x65B9;&#x6848;&#x7684;&#x4E00;&#x4E2A;&#x7269;&#x7406;&#x5B9E;&#x4F8B;&#xFF0C;&#x4E00;&#x4E2A;&#x6709;&#x671B;&#x662F;&#x5B9E;&#x8D28;&#x5B8C;&#x7F8E;&#x7684; <em>&#x62F7;&#x8D1D;</em>&#x3002;&#x7136;&#x540E;&#x5EFA;&#x7B51;&#x5DE5;&#x5C31;&#x53EF;&#x4EE5;&#x79FB;&#x52A8;&#x5230;&#x9694;&#x58C1;&#x5C06;&#x5B83;&#x518D;&#x91CD;&#x505A;&#x4E00;&#x904D;&#xFF0C;&#x5EFA;&#x9020;&#x53E6;&#x4E00;&#x4E2A; <em>&#x62F7;&#x8D1D;</em>&#x3002;</p>
+<p>&#x5EFA;&#x7B51;&#x7269;&#x4E0E;&#x84DD;&#x56FE;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x662F;&#x95F4;&#x63A5;&#x7684;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x68C0;&#x89C6;&#x84DD;&#x56FE;&#x6765;&#x4E86;&#x89E3;&#x5EFA;&#x7B51;&#x7269;&#x662F;&#x5982;&#x4F55;&#x6784;&#x9020;&#x7684;&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;&#x76F4;&#x63A5;&#x8003;&#x5BDF;&#x5EFA;&#x7B51;&#x7269;&#x7684;&#x6BCF;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x4EC5;&#x6709;&#x84DD;&#x56FE;&#x662F;&#x4E0D;&#x591F;&#x7684;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x6253;&#x5F00;&#x4E00;&#x6247;&#x95E8;&#xFF0C;&#x4F60;&#x4E0D;&#x5F97;&#x4E0D;&#x8D70;&#x8FDB;&#x5EFA;&#x7B51;&#x7269;&#x81EA;&#x8EAB;&#x2014;&#x2014;&#x84DD;&#x56FE;&#x4EC5;&#x4EC5;&#x662F;&#x4E3A;&#x4E86;&#x7528;&#x6765; <em>&#x8868;&#x793A;</em> &#x95E8;&#x7684;&#x4F4D;&#x7F6E;&#x800C;&#x5728;&#x7EB8;&#x4E0A;&#x753B;&#x7684;&#x7EBF;&#x6761;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x7C7B;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x84DD;&#x56FE;&#x3002;&#x4E3A;&#x4E86;&#x5B9E;&#x9645;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5E76;&#x4E0E;&#x4E4B;&#x4E92;&#x52A8;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x4ECE;&#x7C7B;&#x4E2D;&#x5EFA;&#x9020;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x5B9E;&#x4F8B;&#x5316;&#xFF09;&#x67D0;&#x4E9B;&#x4E1C;&#x897F;&#x3002;&#x8FD9;&#x79CD;&#x201C;&#x6784;&#x5EFA;&#x201D;&#x7684;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5178;&#x578B;&#x5730;&#x79F0;&#x4E3A;&#x4E00;&#x4E2A;&#x201C;&#x5B9E;&#x4F8B;&#x201D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6309;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x5B83;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8BBF;&#x95EE;&#x5B83;&#x7684;&#x516C;&#x5171;&#x6570;&#x636E;&#x5C5E;&#x6027;&#x3002;</p>
+<p><strong>&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x6240;&#x6709;&#x5728;&#x7C7B;&#x4E2D;&#x88AB;&#x63CF;&#x8FF0;&#x7684;&#x7279;&#x6027;&#x7684; <em>&#x62F7;&#x8D1D;</em>&#x3002;</strong></p>
+<p>&#x4F60;&#x4E0D;&#x592A;&#x6307;&#x671B;&#x8D70;&#x8FDB;&#x4E00;&#x680B;&#x5EFA;&#x7B51;&#x4E4B;&#x540E;&#x53D1;&#x73B0;&#xFF0C;&#x4E00;&#x4EFD;&#x7528;&#x4E8E;&#x89C4;&#x5212;&#x8FD9;&#x680B;&#x5EFA;&#x7B51;&#x7269;&#x7684;&#x84DD;&#x56FE;&#x88AB;&#x88F1;&#x8D77;&#x6765;&#x6302;&#x5728;&#x5899;&#x4E0A;&#xFF0C;&#x867D;&#x7136;&#x84DD;&#x56FE;&#x53EF;&#x80FD;&#x5728;&#x529E;&#x516C;&#x5BA4;&#x7684;&#x516C;&#x5171;&#x8BB0;&#x5F55;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x76F8;&#x4F3C;&#x5730;&#xFF0C;&#x4F60;&#x4E00;&#x822C;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x6765;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x548C;&#x64CD;&#x4F5C;&#x7C7B;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x81F3;&#x5C11;&#x5BF9;&#x4E8E;&#x5224;&#x5B9A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x6765;&#x81EA;&#x4E8E; <em>&#x54EA;&#x4E2A;&#x7C7B;</em> &#x662F;&#x53EF;&#x80FD;&#x7684;&#x3002;</p>
+<p>&#x4E0E;&#x8003;&#x8651;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x4E0E;&#x5B83;&#x6E90;&#x81EA;&#x7684;&#x7C7B;&#x7684;&#x4EFB;&#x4F55;&#x95F4;&#x63A5;&#x5173;&#x7CFB;&#x76F8;&#x6BD4;&#xFF0C;&#x8003;&#x8651;&#x7C7B;&#x548C;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x7684;&#x76F4;&#x63A5;&#x5173;&#x7CFB;&#x66F4;&#x6709;&#x7528;&#x3002;<strong>&#x4E00;&#x4E2A;&#x7C7B;&#x901A;&#x8FC7;&#x62F7;&#x8D1D;&#x64CD;&#x4F5C;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;&#x5F62;&#x5F0F;&#x3002;</strong></p>
+<p><img src="fig1.png"></p>
+<p>&#x5982;&#x4F60;&#x6240;&#x89C1;&#xFF0C;&#x7BAD;&#x5934;&#x7531;&#x5DE6;&#x5411;&#x53F3;&#xFF0C;&#x4ECE;&#x4E0A;&#x81F3;&#x4E0B;&#xFF0C;&#x8FD9;&#x8868;&#x793A;&#x7740;&#x6982;&#x5FF5;&#x4E0A;&#x548C;&#x7269;&#x7406;&#x4E0A;&#x53D1;&#x751F;&#x7684;&#x62F7;&#x8D1D;&#x64CD;&#x4F5C;&#x3002;</p>
+<h3 id="&#x6784;&#x9020;&#x5668;&#xFF08;constructor&#xFF09;">&#x6784;&#x9020;&#x5668;&#xFF08;Constructor&#xFF09;</h3>
+<p>&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x7531;&#x7C7B;&#x7684;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x65B9;&#x6CD5;&#x6784;&#x5EFA;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x540D;&#x79F0;&#x901A;&#x5E38;&#x4E0E;&#x7C7B;&#x540D;&#x76F8;&#x540C;&#xFF0C;&#x79F0;&#x4E3A; <em>&#x201C;&#x6784;&#x9020;&#x5668;&#xFF08;constructor&#xFF09;&#x201D;</em>&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x660E;&#x786E;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x5C31;&#x662F;&#x521D;&#x59CB;&#x5316;&#x5B9E;&#x4F8B;&#x6240;&#x9700;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;&#xFF08;&#x72B6;&#x6001;&#xFF09;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x8003;&#x8651;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x5047;&#x60F3;&#x4EE3;&#x7801;&#xFF08;&#x8BED;&#x6CD5;&#x662F;&#x81EA;&#x521B;&#x7684;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CoolGuy</span> </span>{
+    specialTrick = nothing
+
+    CoolGuy( trick ) {
+        specialTrick = trick
+    }
+
+    showOff() {
+        output( <span class="hljs-string">&quot;Here&apos;s my trick: &quot;</span>, specialTrick )
+    }
+}
+</code></pre>
+<p>&#x4E3A;&#x4E86; <em>&#x5236;&#x9020;</em> &#x4E00;&#x4E2A;<code>CoolGuy</code>&#x5B9E;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8C03;&#x7528;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x5668;:</p>
+<pre><code class="lang-js">Joe = <span class="hljs-keyword">new</span> CoolGuy( <span class="hljs-string">&quot;jumping rope&quot;</span> )
+
+Joe.showOff() <span class="hljs-comment">// Here&apos;s my trick: jumping rope</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;<code>CoolGuy</code>&#x7C7B;&#x6709;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x5668;<code>CoolGuy()</code>&#xFF0C;&#x5B83;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x5728;&#x6211;&#x4EEC;&#x8BF4;<code>new CoolGuy(..)</code>&#x65F6;&#x8C03;&#x7528;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x4ECE;&#x8FD9;&#x4E2A;&#x6784;&#x9020;&#x5668;&#x62FF;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF08;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x7528;<code>showOff()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x6765;&#x6253;&#x5370;&#x8FD9;&#x4E2A;&#x7279;&#x5B9A;&#x7684;<code>CoolGuy</code>&#x7684;&#x7279;&#x6B8A;&#x624D;&#x827A;&#x3002;</p>
+<p><em>&#x663E;&#x7136;&#xFF0C;&#x8DF3;&#x7EF3;&#x4F7F;Joe&#x770B;&#x8D77;&#x6765;&#x5F88;&#x9177;&#x3002;</em></p>
+<p>&#x7C7B;&#x7684;&#x6784;&#x9020;&#x5668; <em>&#x5C5E;&#x4E8E;</em> &#x90A3;&#x4E2A;&#x7C7B;&#xFF0C;&#x51E0;&#x4E4E;&#x603B;&#x662F;&#x548C;&#x7C7B;&#x540C;&#x540D;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x6784;&#x9020;&#x5668;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x603B;&#x662F;&#x9700;&#x8981;&#x7528;<code>new</code>&#x6765;&#x8C03;&#x7528;&#xFF0C;&#x4EE5;&#x4FBF;&#x4F7F;&#x8BED;&#x8A00;&#x7684;&#x5F15;&#x64CE;&#x77E5;&#x9053;&#x4F60;&#x60F3;&#x8981;&#x6784;&#x5EFA;&#x4E00;&#x4E2A; <em>&#x65B0;&#x7684;</em> &#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<h2 id="&#x7C7B;&#x7EE7;&#x627F;">&#x7C7B;&#x7EE7;&#x627F;</h2>
+<p>&#x5728;&#x9762;&#x5411;&#x7C7B;&#x7684;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x4F60;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x521D;&#x59CB;&#x5316;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x7C7B;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x7C7B; <strong>&#x7EE7;&#x627F;</strong> &#x81EA;&#x7B2C;&#x4E00;&#x4E2A;&#x7C7B;&#x3002;</p>
+<p>&#x8FD9;&#x7B2C;&#x4E8C;&#x4E2A;&#x7C7B;&#x901A;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;&#x201C;&#x5B50;&#x7C7B;&#x201D;&#xFF0C;&#x800C;&#x7B2C;&#x4E00;&#x4E2A;&#x7C7B;&#x88AB;&#x79F0;&#x4E3A;&#x201C;&#x7236;&#x7C7B;&#x201D;&#x3002;&#x8FD9;&#x4E9B;&#x540D;&#x8BCD;&#x660E;&#x663E;&#x5730;&#x6765;&#x81EA;&#x4E8E;&#x4EB2;&#x5B50;&#x5173;&#x7CFB;&#x7684;&#x6BD4;&#x62DF;&#xFF0C;&#x867D;&#x7136;&#x8FD9;&#x79CD;&#x6BD4;&#x62DF;&#x6709;&#x4E9B;&#x626D;&#x66F2;&#xFF0C;&#x5C31;&#x50CF;&#x4F60;&#x9A6C;&#x4E0A;&#x8981;&#x770B;&#x5230;&#x7684;&#x3002;</p>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x5BB6;&#x957F;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x548C;&#x4ED6;&#x6709;&#x8840;&#x7F18;&#x5173;&#x7CFB;&#x7684;&#x5B69;&#x5B50;&#x65F6;&#xFF0C;&#x5BB6;&#x957F;&#x7684;&#x9057;&#x4F20;&#x6027;&#x8D28;&#x4F1A;&#x88AB;&#x62F7;&#x8D1D;&#x5230;&#x5B69;&#x5B50;&#x8EAB;&#x4E0A;&#x3002;&#x660E;&#x663E;&#x5730;&#xFF0C;&#x5728;&#x5927;&#x591A;&#x6570;&#x751F;&#x7269;&#x7E41;&#x6B96;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x53CC;&#x4EB2;&#x90FD;&#x5E73;&#x7B49;&#x5730;&#x8D21;&#x732E;&#x57FA;&#x56E0;&#x8FDB;&#x884C;&#x6DF7;&#x5408;&#x3002;&#x4F46;&#x662F;&#x4E3A;&#x4E86;&#x8FD9;&#x4E2A;&#x6BD4;&#x62DF;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x4EB2;&#x4EBA;&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x5B69;&#x5B50;&#x51FA;&#x73B0;&#xFF0C;&#x4ED6;&#x6216;&#x5979;&#x5C31;&#x4ECE;&#x4EB2;&#x4EBA;&#x90A3;&#x91CC;&#x5206;&#x79BB;&#x51FA;&#x6765;&#x3002;&#x8FD9;&#x4E2A;&#x5B69;&#x5B50;&#x53D7;&#x5176;&#x4EB2;&#x4EBA;&#x7684;&#x7EE7;&#x627F;&#x56E0;&#x7D20;&#x7684;&#x4E25;&#x91CD;&#x5F71;&#x54CD;&#xFF0C;&#x4F46;&#x662F;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x5B69;&#x5B50;&#x62E5;&#x6709;&#x7EA2;&#x8272;&#x7684;&#x5934;&#x53D1;&#xFF0C;&#x8FD9;&#x5E76;&#x4E0D;&#x610F;&#x5473;&#x8FD9;&#x4ED6;&#x7684;&#x4EB2;&#x4EBA;&#x7684;&#x5934;&#x53D1; <em>&#x66FE;&#x7ECF;</em> &#x662F;&#x7EA2;&#x8272;&#xFF0C;&#x6216;&#x8005;&#x4F1A;&#x81EA;&#x52A8; <em>&#x53D8;&#x6210;</em> &#x7EA2;&#x8272;&#x3002;</p>
+<p>&#x4EE5;&#x76F8;&#x4F3C;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4E00;&#x65E6;&#x4E00;&#x4E2A;&#x5B50;&#x7C7B;&#x88AB;&#x5B9A;&#x4E49;&#xFF0C;&#x5B83;&#x5C31;&#x5206;&#x79BB;&#x4E14;&#x533A;&#x522B;&#x4E8E;&#x7236;&#x7C7B;&#x3002;&#x5B50;&#x7C7B;&#x542B;&#x6709;&#x4E00;&#x4EFD;&#x4ECE;&#x7236;&#x7C7B;&#x90A3;&#x91CC;&#x5F97;&#x6765;&#x7684;&#x884C;&#x4E3A;&#x7684;&#x521D;&#x59CB;&#x62F7;&#x8D1D;&#xFF0C;&#x4F46;&#x5B83;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x8FD9;&#x4E9B;&#x7EE7;&#x627F;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x5B9A;&#x4E49;&#x65B0;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x91CD;&#x8981;&#x7684;&#x662F;&#xFF0C;&#x8981;&#x8BB0;&#x4F4F;&#x6211;&#x4EEC;&#x5728;&#x8BA8;&#x8BBA;&#x7236; <strong>&#x7C7B;</strong> &#x548C;&#x5B50; <strong>&#x7C7B;</strong>&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7269;&#x7406;&#x4E0A;&#x7684;&#x4E1C;&#x897F;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x4EB2;&#x5B50;&#x6BD4;&#x62DF;&#x8BA9;&#x4EBA;&#x7CCA;&#x6D82;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5B9E;&#x9645;&#x4E0A;&#x5E94;&#x5F53;&#x8BF4;&#x7236;&#x7C7B;&#x5C31;&#x662F;&#x4EB2;&#x4EBA;&#x7684;DNA&#xFF0C;&#x800C;&#x5B50;&#x7C7B;&#x5C31;&#x662F;&#x5B69;&#x5B50;&#x7684;DNA&#x3002;&#x6211;&#x4EEC;&#x4E0D;&#x5F97;&#x4E0D;&#x4ECE;&#x4E24;&#x5957;DNA&#x5236;&#x9020;&#x51FA;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x521D;&#x59CB;&#x5316;&#xFF09;&#x4EBA;&#xFF0C;&#x7528;&#x5F97;&#x5230;&#x7684;&#x7269;&#x7406;&#x4E0A;&#x5B58;&#x5728;&#x7684;&#x4EBA;&#x6765;&#x4E0E;&#x4E4B;&#x8FDB;&#x884C;&#x8C08;&#x8BDD;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x628A;&#x751F;&#x7269;&#x5B66;&#x4E0A;&#x7684;&#x4EB2;&#x5B50;&#x653E;&#x5728;&#x4E00;&#x8FB9;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x7A0D;&#x7A0D;&#x4E0D;&#x540C;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x770B;&#x770B;&#x7EE7;&#x627F;&#xFF1A;&#x4E0D;&#x540C;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x8F7D;&#x5177;&#x3002;&#x8FD9;&#x662F;&#x7528;&#x6765;&#x7406;&#x89E3;&#x7EE7;&#x627F;&#x7684;&#x6700;&#x7ECF;&#x5178;&#xFF08;&#x4E5F;&#x662F;&#x4E89;&#x8BAE;&#x4E0D;&#x65AD;&#x7684;&#xFF09;&#x7684;&#x6BD4;&#x62DF;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x91CD;&#x65B0;&#x5BA1;&#x89C6;&#x672C;&#x7AE0;&#x524D;&#x9762;&#x7684;<code>Vehicle</code>&#x548C;<code>Car</code>&#x7684;&#x8BA8;&#x8BBA;&#x3002;&#x8003;&#x8651;&#x4E0B;&#x9762;&#x8868;&#x8FBE;&#x7EE7;&#x627F;&#x7684;&#x7C7B;&#x7684;&#x5047;&#x60F3;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vehicle</span> </span>{
+    engines = <span class="hljs-number">1</span>
+
+    ignition() {
+        output( <span class="hljs-string">&quot;Turning on my engine.&quot;</span> )
+    }
+
+    drive() {
+        ignition()
+        output( <span class="hljs-string">&quot;Steering and moving forward!&quot;</span> )
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> <span class="hljs-title">inherits</span> <span class="hljs-title">Vehicle</span> </span>{
+    wheels = <span class="hljs-number">4</span>
+
+    drive() {
+        inherited:drive()
+        output( <span class="hljs-string">&quot;Rolling on all &quot;</span>, wheels, <span class="hljs-string">&quot; wheels!&quot;</span> )
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SpeedBoat</span> <span class="hljs-title">inherits</span> <span class="hljs-title">Vehicle</span> </span>{
+    engines = <span class="hljs-number">2</span>
+
+    ignition() {
+        output( <span class="hljs-string">&quot;Turning on my &quot;</span>, engines, <span class="hljs-string">&quot; engines.&quot;</span> )
+    }
+
+    pilot() {
+        inherited:drive()
+        output( <span class="hljs-string">&quot;Speeding through the water with ease!&quot;</span> )
+    }
+}
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x4E3A;&#x4E86;&#x7B80;&#x6D01;&#x660E;&#x4E86;&#xFF0C;&#x8FD9;&#x4E9B;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x5668;&#x88AB;&#x7701;&#x7565;&#x4E86;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5B9A;&#x4E49;<code>Vehicle</code>&#x7C7B;&#xFF0C;&#x5047;&#x5B9A;&#x5B83;&#x6709;&#x4E00;&#x4E2A;&#x5F15;&#x64CE;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x6253;&#x5F00;&#x6253;&#x706B;&#x5668;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x548C;&#x4E00;&#x4E2A;&#x884C;&#x9A76;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x4F46;&#x4F60;&#x6C38;&#x8FDC;&#x4E5F;&#x4E0D;&#x4F1A;&#x5236;&#x9020;&#x4E00;&#x4E2A;&#x6CDB;&#x5316;&#x7684;&#x201C;&#x8F7D;&#x5177;&#x201D;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x5B83;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x6982;&#x5FF5;&#x7684;&#x62BD;&#x8C61;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x4E24;&#x79CD;&#x5177;&#x4F53;&#x7684;&#x8F7D;&#x5177;&#xFF1A;<code>Car</code>&#x548C;<code>SpeedBoat</code>&#x3002;&#x5B83;&#x4EEC;&#x90FD;&#x7EE7;&#x627F;<code>Vehicle</code>&#x7684;&#x6CDB;&#x5316;&#x6027;&#x8D28;&#xFF0C;&#x4F46;&#x4E4B;&#x540E;&#x5B83;&#x4EEC;&#x90FD;&#x5BF9;&#x8FD9;&#x4E9B;&#x6027;&#x8D28;&#x8FDB;&#x884C;&#x4E86;&#x5408;&#x9002;&#x7684;&#x7279;&#x5316;&#x3002;&#x4E00;&#x8F86;&#x8F66;&#x6709;4&#x4E2A;&#x8F6E;&#x5B50;&#xFF0C;&#x4E00;&#x8258;&#x5FEB;&#x8247;&#x6709;&#x4E24;&#x4E2A;&#x5F15;&#x64CE;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5B83;&#x9700;&#x8981;&#x5728;&#x6253;&#x706B;&#x65F6;&#x9700;&#x8981;&#x7279;&#x522B;&#x6CE8;&#x610F;&#x8981;&#x542F;&#x52A8;&#x4E24;&#x4E2A;&#x5F15;&#x64CE;&#x3002;</p>
+<h3 id="&#x591A;&#x6001;&#xFF08;polymorphism&#xFF09;">&#x591A;&#x6001;&#xFF08;Polymorphism&#xFF09;</h3>
+<p><code>Car</code>&#x5B9A;&#x4E49;&#x4E86;&#x81EA;&#x5DF1;&#x7684;<code>drive()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x8986;&#x76D6;&#x4E86;&#x4ECE;<code>Vehicle</code>&#x7EE7;&#x627F;&#x6765;&#x7684;&#x540C;&#x540D;&#x65B9;&#x6CD5;&#x3002;&#x4F46;&#x662F;&#xFF0C;<code>Car</code>&#x7684;<code>drive()</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x4E86;<code>inherited:drive()</code>&#xFF0C;&#x8FD9;&#x8868;&#x793A;<code>Car</code>&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x5B83;&#x7EE7;&#x627F;&#x7684;&#xFF0C;&#x8986;&#x76D6;&#x4E4B;&#x524D;&#x7684;&#x539F;&#x7248;<code>drive()</code>&#x3002;<code>SpeedBoat</code>&#x7684;<code>pilot()</code>&#x65B9;&#x6CD5;&#x4E5F;&#x5F15;&#x7528;&#x4E86;&#x5B83;&#x7EE7;&#x627F;&#x7684;<code>drive()</code>&#x62F7;&#x8D1D;&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x6280;&#x672F;&#x79F0;&#x4E3A;&#x201C;&#x591A;&#x6001;&#xFF08;polymorphism&#xFF09;&#x201D;&#xFF0C;&#x6216;&#x201C;&#x865A;&#x62DF;&#x591A;&#x6001;&#xFF08;virtual polymorphism&#xFF09;&#x201D;&#x3002;&#x5BF9;&#x6211;&#x4EEC;&#x5F53;&#x524D;&#x7684;&#x60C5;&#x51B5;&#x66F4;&#x5177;&#x4F53;&#x4E00;&#x4E9B;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x201C;&#x76F8;&#x5BF9;&#x591A;&#x6001;&#xFF08;relative polymorphism&#xFF09;&#x201D;&#x3002;</p>
+<p>&#x591A;&#x6001;&#x8FD9;&#x4E2A;&#x8BDD;&#x9898;&#x6BD4;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x8C08;&#x5230;&#x7684;&#x5185;&#x5BB9;&#x8981;&#x5BBD;&#x6CDB;&#x7684;&#x591A;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x5F53;&#x524D;&#x7684;&#x201C;&#x76F8;&#x5BF9;&#x201D;&#x610F;&#x5473;&#x7740;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x5C42;&#x9762;&#xFF1A;&#x4EFB;&#x4F55;&#x65B9;&#x6CD5;&#x90FD;&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x4F4D;&#x4E8E;&#x7EE7;&#x627F;&#x5C42;&#x7EA7;&#x4E0A;&#x66F4;&#x9AD8;&#x4E00;&#x5C42;&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#xFF08;&#x540C;&#x540D;&#x6216;&#x4E0D;&#x540C;&#x540D;&#xFF09;&#x3002;&#x6211;&#x4EEC;&#x8BF4;&#x201C;&#x76F8;&#x5BF9;&#x201D;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x4E0D;&#x7EDD;&#x5BF9;&#x5B9A;&#x4E49;&#x6211;&#x4EEC;&#x60F3;&#x8BBF;&#x95EE;&#x7EE7;&#x627F;&#x7684;&#x54EA;&#x4E00;&#x5C42;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x7C7B;&#xFF09;&#xFF0C;&#x800C;&#x5B9E;&#x8D28;&#x4E0A;&#x5728;&#x8BF4;&#x201C;&#x5411;&#x4E0A;&#x4E00;&#x5C42;&#x201D;&#x6765;&#x76F8;&#x5BF9;&#x5730;&#x5F15;&#x7528;&#x3002;</p>
+<p>&#x5728;&#x8BB8;&#x591A;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x4F7F;&#x7528;<code>inherited:</code>&#x7684;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#x4E86;<code>super</code>&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5B83;&#x7684;&#x57FA;&#x4E8E;&#x8FD9;&#x6837;&#x7684;&#x60F3;&#x6CD5;&#xFF1A;&#x4E00;&#x4E2A;&#x201C;&#x8D85;&#x7C7B;&#xFF08;super class&#xFF09;&#x201D;&#x662F;&#x5F53;&#x524D;&#x7C7B;&#x7684;&#x7236;&#x4EB2;/&#x7956;&#x5148;&#x3002;</p>
+<p>&#x591A;&#x6001;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x65B9;&#x9762;&#x662F;&#xFF0C;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x540D;&#x53EF;&#x4EE5;&#x5728;&#x7EE7;&#x627F;&#x94FE;&#x7684;&#x4E0D;&#x540C;&#x5C42;&#x9762;&#x4E0A;&#x6709;&#x591A;&#x79CD;&#x5B9A;&#x4E49;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x89E3;&#x6790;&#x54EA;&#x4E2A;&#x65B9;&#x6CD5;&#x5728;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B9A;&#x4E49;&#x53EF;&#x4EE5;&#x9002;&#x5F53;&#x5730;&#x88AB;&#x81EA;&#x52A8;&#x9009;&#x62E9;&#x3002;</p>
+<p>&#x5728;&#x6211;&#x4EEC;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#x53D1;&#x751F;&#x4E86;&#x4E24;&#x6B21;&#xFF1A;<code>drive()</code>&#x5728;<code>Vehicle</code>&#x548C;<code>Car</code>&#x4E2D;&#x5B9A;&#x4E49;, &#x800C;<code>ignition()</code>&#x5728;<code>Vehicle</code>&#x548C;<code>SpeedBoat</code>&#x4E2D;&#x5B9A;&#x4E49;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x53E6;&#x4E00;&#x4E2A;&#x4F20;&#x7EDF;&#x9762;&#x5411;&#x7C7B;&#x8BED;&#x8A00;&#x901A;&#x8FC7;<code>super</code>&#x7ED9;&#x4F60;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x662F;&#x4ECE;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x5668;&#x4E2D;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x7236;&#x7C7B;&#x6784;&#x9020;&#x5668;&#x3002;&#x8FD9;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x662F;&#x5BF9;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5BF9;&#x771F;&#x6B63;&#x7684;&#x7C7B;&#x6765;&#x8BF4;&#xFF0C;&#x6784;&#x9020;&#x5668;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;&#x7C7B;&#x3002;&#x7136;&#x800C;&#x5728;JS&#x4E2D;&#xFF0C;&#x8FD9;&#x662F;&#x76F8;&#x53CD;&#x7684;&#x2014;&#x2014;&#x5B9E;&#x9645;&#x4E0A;&#x8BA4;&#x4E3A;&#x201C;&#x7C7B;&#x201D;&#x5C5E;&#x4E8E;&#x6784;&#x9020;&#x5668;&#xFF08;<code>Foo.prototype...</code>&#x7C7B;&#x578B;&#x5F15;&#x7528;&#xFF09;&#x66F4;&#x6070;&#x5F53;&#x3002;&#x56E0;&#x4E3A;&#x5728;JS&#x4E2D;&#xFF0C;&#x7236;&#x5B50;&#x5173;&#x7CFB;&#x4EC5;&#x5B58;&#x5728;&#x4E8E;&#x5B83;&#x4EEC;&#x5404;&#x81EA;&#x7684;&#x6784;&#x9020;&#x5668;&#x7684;&#x4E24;&#x4E2A;<code>.prototype</code>&#x5BF9;&#x8C61;&#x95F4;&#xFF0C;&#x6784;&#x9020;&#x5668;&#x672C;&#x8EAB;&#x4E0D;&#x76F4;&#x63A5;&#x5173;&#x8054;&#xFF0C;&#x800C;&#x4E14;&#x6CA1;&#x6709;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x4ECE;&#x4E00;&#x4E2A;&#x4E2D;&#x76F8;&#x5BF9;&#x5F15;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#xFF08;&#x53C2;&#x89C1;&#x9644;&#x5F55;A&#xFF0C;&#x770B;&#x770B;ES6&#x4E2D;&#x7528;<code>super</code>&#x201C;&#x89E3;&#x51B3;&#x201D;&#x6B64;&#x95EE;&#x9898;&#x7684;<code>class</code>&#xFF09;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4ECE;<code>ignition()</code>&#x4E2D;&#x5177;&#x4F53;&#x770B;&#x51FA;&#x591A;&#x6001;&#x7684;&#x4E00;&#x4E2A;&#x6709;&#x8DA3;&#x7684;&#x542B;&#x4E49;&#x3002;&#x5728;<code>pilot()</code>&#x5185;&#x90E8;&#xFF0C;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x591A;&#x6001;&#x5F15;&#x7528;&#x6307;&#x5411;&#x4E86;&#xFF08;&#x7EE7;&#x627F;&#x7684;&#xFF09;<code>Vehicle</code>&#x7248;&#x672C;&#x7684;<code>drive()</code>&#x3002;&#x800C;&#x8FD9;&#x4E2A;<code>drive()</code>&#x4EC5;&#x4EC5;&#x901A;&#x8FC7;&#x540D;&#x79F0;&#xFF08;&#x4E0D;&#x662F;&#x76F8;&#x5BF9;&#x5F15;&#x7528;&#xFF09;&#x6765;&#x5F15;&#x7528;<code>ignition()</code>&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x8BED;&#x8A00;&#x7684;&#x5F15;&#x64CE;&#x4F1A;&#x4F7F;&#x7528;&#x54EA;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x7684;<code>ignition()</code>&#xFF1F;&#x662F;<code>Vehicle</code>&#x7684;&#x8FD8;&#x662F;<code>SpeedBoat</code>&#x7684;&#xFF1F;<strong>&#x5B83;&#x4F1A;&#x4F7F;&#x7528;<code>SpeedBoat</code>&#x7248;&#x672C;&#x7684;<code>ignition()</code>&#x3002;</strong> &#x5982;&#x679C;&#x4F60; <em>&#x80FD;</em> &#x521D;&#x59CB;&#x5316;<code>Vehicle</code>&#x7C7B;&#x81EA;&#x8EAB;&#xFF0C;&#x5E76;&#x4E14;&#x8C03;&#x7528;&#x5B83;&#x7684;<code>drive()</code>&#xFF0C;&#x90A3;&#x4E48;&#x8BED;&#x8A00;&#x5F15;&#x64CE;&#x5C06;&#x4F1A;&#x4F7F;&#x7528;<code>Vehicle</code>&#x7684;<code>ignition()</code>&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;<code>ignition()</code>&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x6839;&#x636E;&#x4F60;&#x5F15;&#x7528;&#x7684;&#x5B9E;&#x4F8B;&#x662F;&#x54EA;&#x4E2A;&#x7C7B;&#xFF08;&#x7EE7;&#x627F;&#x5C42;&#x7EA7;&#xFF09;&#x800C; <em>&#x591A;&#x6001;</em>&#xFF08;&#x6539;&#x53D8;&#xFF09;&#x3002;</p>
+<p>&#x8FD9;&#x770B;&#x8D77;&#x6765;&#x8FC7;&#x4E8E;&#x6DF1;&#x5165;&#x5B66;&#x672F;&#x7EC6;&#x8282;&#x4E86;&#x3002;&#x4E0D;&#x8FC7;&#x4E3A;&#x4E86;&#x597D;&#x597D;&#x5730;&#x4E0E;JavaScript&#x7684;<code>[[Prototype]]</code>&#x673A;&#x5236;&#x7684;&#x7C7B;&#x4F3C;&#x884C;&#x4E3A;&#x8FDB;&#x884C;&#x5BF9;&#x6BD4;&#xFF0C;&#x7406;&#x89E3;&#x8FD9;&#x4E9B;&#x7EC6;&#x8282;&#x8FD8;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7C7B;&#x662F;&#x7EE7;&#x627F;&#x800C;&#x6765;&#x7684;&#xFF0C;<strong>&#x5BF9;&#x8FD9;&#x4E9B;&#x7C7B;&#x672C;&#x8EAB;</strong>&#xFF08;&#x4E0D;&#x662F;&#x7531;&#x5B83;&#x4EEC;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#xFF09;&#x6709;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5; <em>&#x76F8;&#x5BF9;&#x5730;</em> &#x5F15;&#x7528;&#x5B83;&#x4EEC;&#x7EE7;&#x627F;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E2A;&#x76F8;&#x5BF9;&#x5F15;&#x7528;&#x901A;&#x5E38;&#x79F0;&#x4E3A;<code>super</code>&#x3002;</p>
+<p>&#x8BB0;&#x5F97;&#x521A;&#x624D;&#x8FD9;&#x5E45;&#x56FE;&#xFF1A;</p>
+<p><img src="fig1.png"></p>
+<p>&#x6CE8;&#x610F;&#x5BF9;&#x4E8E;&#x5B9E;&#x4F8B;&#x5316;(<code>a1</code>&#xFF0C;<code>a2</code>&#xFF0C;<code>b1</code>&#xFF0C;&#x548C;<code>b2</code>) <em>&#x548C;</em> &#x7EE7;&#x627F;(<code>Bar</code>)&#xFF0C;&#x7BAD;&#x5934;&#x5982;&#x4F55;&#x8868;&#x793A;&#x62F7;&#x8D1D;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x4ECE;&#x6982;&#x5FF5;&#x4E0A;&#x8BB2;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x5B50;&#x7C7B;<code>Bar</code>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x591A;&#x6001;&#x5F15;&#x7528;&#xFF08;&#x4E5F;&#x5C31;&#x662F;<code>super</code>&#xFF09;&#x6765;&#x8BBF;&#x95EE;&#x5B83;&#x7684;&#x7236;&#x7C7B;<code>Foo</code>&#x7684;&#x884C;&#x4E3A;&#x3002;&#x7136;&#x800C;&#x5728;&#x73B0;&#x5B9E;&#x4E2D;&#xFF0C;&#x5B50;&#x7C7B;&#x4E0D;&#x8FC7;&#x662F;&#x88AB;&#x7ED9;&#x4E0E;&#x4E86;&#x4E00;&#x4EFD;&#x5B83;&#x4ECE;&#x7236;&#x7C7B;&#x7EE7;&#x627F;&#x6765;&#x7684;&#x884C;&#x4E3A;&#x7684;&#x62F7;&#x8D1D;&#x800C;&#x5DF2;&#x3002;&#x5982;&#x679C;&#x5B50;&#x7C7B;&#x201C;&#x8986;&#x76D6;&#x201D;&#x4E00;&#x4E2A;&#x5B83;&#x7EE7;&#x627F;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x539F;&#x7248;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x8986;&#x76D6;&#x7248;&#x7684;&#x65B9;&#x6CD5;&#x5B9E;&#x9645;&#x4E0A;&#x90FD;&#x662F;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x7684;&#x3002;</p>
+<p>&#x4E0D;&#x8981;&#x8BA9;&#x591A;&#x6001;&#x628A;&#x4F60;&#x641E;&#x7CCA;&#x6D82;&#xFF0C;&#x4F7F;&#x4F60;&#x8BA4;&#x4E3A;&#x5B50;&#x7C7B;&#x662F;&#x94FE;&#x63A5;&#x5230;&#x7236;&#x7C7B;&#x4E0A;&#x7684;&#x3002;&#x5B50;&#x7C7B;&#x5F97;&#x5230;&#x4E00;&#x4EFD;&#x5B83;&#x9700;&#x8981;&#x4ECE;&#x7236;&#x7C7B;&#x7EE7;&#x627F;&#x7684;&#x4E1C;&#x897F;&#x7684;&#x62F7;&#x8D1D;&#x3002;<strong>&#x7C7B;&#x7EE7;&#x627F;&#x610F;&#x5473;&#x7740;&#x62F7;&#x8D1D;&#x3002;</strong></p>
+<h3 id="&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF08;multiple-inheritance&#xFF09;">&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF08;Multiple Inheritance&#xFF09;</h3>
+<p>&#x80FD;&#x56DE;&#x60F3;&#x8D77;&#x6211;&#x4EEC;&#x65E9;&#x5148;&#x63D0;&#x5230;&#x7684;&#x4EB2;&#x5B50;&#x548C;DNA&#x5417;&#xFF1F;&#x6211;&#x4EEC;&#x8BF4;&#x8FC7;&#x8FD9;&#x4E2A;&#x6BD4;&#x62DF;&#x6709;&#x4E9B;&#x5947;&#x602A;&#xFF0C;&#x56E0;&#x4E3A;&#x751F;&#x7269;&#x5B66;&#x4E0A;&#x5927;&#x591A;&#x6570;&#x540E;&#x4EE3;&#x6765;&#x81EA;&#x4E8E;&#x53CC;&#x4EB2;&#x3002;&#x5982;&#x679C;&#x7C7B;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#x81EA;&#x5176;&#x4ED6;&#x4E24;&#x4E2A;&#x7C7B;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x4EB2;&#x5B50;&#x6BD4;&#x62DF;&#x4F1A;&#x66F4;&#x5408;&#x9002;&#x4E00;&#x4E9B;&#x3002;</p>
+<p>&#x6709;&#x4E9B;&#x9762;&#x5411;&#x7C7B;&#x7684;&#x8BED;&#x8A00;&#x5141;&#x8BB8;&#x4F60;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x201C;&#x7236;&#x7C7B;&#x201D;&#x6765;&#x8FDB;&#x884C;&#x201C;&#x7EE7;&#x627F;&#x201D;&#x3002;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x610F;&#x5473;&#x7740;&#x6BCF;&#x4E2A;&#x7236;&#x7C7B;&#x7684;&#x5B9A;&#x4E49;&#x90FD;&#x88AB;&#x62F7;&#x8D1D;&#x5230;&#x5B50;&#x7C7B;&#x4E2D;&#x3002;</p>
+<p>&#x8868;&#x9762;&#x4E0A;&#x770B;&#x6765;&#xFF0C;&#x8FD9;&#x662F;&#x5BF9;&#x9762;&#x5411;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;&#x52A0;&#x6210;&#x80FD;&#x529B;&#xFF0C;&#x7ED9;&#x6211;&#x4EEC;&#x80FD;&#x529B;&#x53BB;&#x5C06;&#x66F4;&#x591A;&#x529F;&#x80FD;&#x7EC4;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x8FD9;&#x65E0;&#x7591;&#x4F1A;&#x4EA7;&#x751F;&#x4E00;&#x4E9B;&#x590D;&#x6742;&#x7684;&#x95EE;&#x9898;&#x3002;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x7236;&#x7C7B;&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x540D;&#x4E3A;<code>drive()</code>&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x7684;<code>drive()</code>&#x5F15;&#x7528;&#x5C06;&#x4F1A;&#x89E3;&#x6790;&#x4E3A;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#xFF1F;&#x4F60;&#x4F1A;&#x603B;&#x662F;&#x4E0D;&#x5F97;&#x4E0D;&#x624B;&#x52A8;&#x6307;&#x660E;&#x54EA;&#x4E2A;&#x7236;&#x7C7B;&#x7684;<code>drive()</code>&#x662F;&#x4F60;&#x60F3;&#x8981;&#x7684;&#xFF0C;&#x4ECE;&#x800C;&#x5931;&#x53BB;&#x4E00;&#x4E9B;&#x591A;&#x6001;&#x7EE7;&#x627F;&#x7684;&#x4F18;&#x96C5;&#x4E4B;&#x5904;&#x5417;&#xFF1F;</p>
+<p>&#x8FD8;&#x6709;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6240;&#x8C13;&#x7684;&#x201C;&#x94BB;&#x77F3;&#x95EE;&#x9898;&#x201D;&#xFF1A;&#x5B50;&#x7C7B;&#x201C;D&#x201D;&#x7EE7;&#x627F;&#x81EA;&#x4E24;&#x4E2A;&#x7236;&#x7C7B;&#xFF08;&#x201C;B&#x201D;&#x548C;&#x201C;C&#x201D;&#xFF09;&#xFF0C;&#x5B83;&#x4EEC;&#x4E24;&#x4E2A;&#x53C8;&#x7EE7;&#x627F;&#x81EA;&#x5171;&#x901A;&#x7684;&#x7236;&#x7C7B;&#x201C;A&#x201D;&#x3002;&#x5982;&#x679C;&#x201C;A&#x201D;&#x63D0;&#x4F9B;&#x4E86;&#x65B9;&#x6CD5;<code>drive()</code>&#xFF0C;&#x800C;&#x201C;B&#x201D;&#x548C;&#x201C;C&#x201D;&#x90FD;&#x8986;&#x76D6;&#xFF08;&#x591A;&#x6001;&#x5730;&#xFF09;&#x4E86;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x201C;D&#x201D;&#x5F15;&#x7528;<code>drive()</code>&#x65F6;&#xFF0C;&#x5B83;&#x5E94;&#x5F53;&#x4F7F;&#x7528;&#x90A3;&#x4E2A;&#x7248;&#x672C;&#x5462;&#xFF08;<code>B:drive()</code>&#x8FD8;&#x662F;<code>C:drive()</code>&#xFF09;&#xFF1F;</p>
+<p><img src="fig2.png"></p>
+<p>&#x4E8B;&#x60C5;&#x4F1A;&#x6BD4;&#x6211;&#x4EEC;&#x8FD9;&#x6837;&#x7AA5;&#x8C79;&#x4E00;&#x6591;&#x80FD;&#x770B;&#x5230;&#x7684;&#x590D;&#x6742;&#x5F97;&#x591A;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x91CC;&#x628A;&#x5B83;&#x4EEC;&#x8BB0;&#x4E0B;&#x6765;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E8E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x548C;JavaScript&#x673A;&#x5236;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x6BD4;&#x8F83;&#x3002;</p>
+<p>JavaScript&#x66F4;&#x7B80;&#x5355;&#xFF1A;&#x5B83;&#x4E0D;&#x4E3A;&#x201C;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x201D;&#x63D0;&#x4F9B;&#x539F;&#x751F;&#x673A;&#x5236;&#x3002;&#x8BB8;&#x591A;&#x4EBA;&#x8BA4;&#x4E3A;&#x8FD9;&#x662F;&#x597D;&#x4E8B;&#xFF0C;&#x56E0;&#x4E3A;&#x7701;&#x53BB;&#x7684;&#x590D;&#x6742;&#x6027;&#x8981;&#x6BD4;&#x201C;&#x51CF;&#x5C11;&#x201D;&#x7684;&#x529F;&#x80FD;&#x591A;&#x5F97;&#x591A;&#x3002;&#x4F46;&#x662F;&#x8FD9;&#x5E76;&#x4E0D;&#x80FD;&#x963B;&#x6321;&#x5F00;&#x53D1;&#x8005;&#x4EEC;&#x7528;&#x5404;&#x79CD;&#x65B9;&#x6CD5;&#x6765;&#x6A21;&#x62DF;&#x5B83;&#xFF0C;&#x6211;&#x4EEC;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x770B;&#x770B;&#x3002;</p>
+<h2 id="&#x6DF7;&#x5408;&#xFF08;mixin&#xFF09;">&#x6DF7;&#x5408;&#xFF08;Mixin&#xFF09;</h2>
+<p>&#x5F53;&#x4F60;&#x201C;&#x7EE7;&#x627F;&#x201D;&#x6216;&#x662F;&#x201C;&#x5B9E;&#x4F8B;&#x5316;&#x201D;&#x65F6;&#xFF0C;JavaScript&#x7684;&#x5BF9;&#x8C61;&#x673A;&#x5236;&#x4E0D;&#x4F1A; <em>&#x81EA;&#x52A8;&#x5730;</em> &#x6267;&#x884C;&#x62F7;&#x8D1D;&#x884C;&#x4E3A;&#x3002;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5728;JavaScript&#x4E2D;&#x6CA1;&#x6709;&#x201C;&#x7C7B;&#x201D;&#x53EF;&#x4EE5;&#x62FF;&#x6765;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x53EA;&#x6709;&#x5BF9;&#x8C61;&#x3002;&#x800C;&#x4E14;&#x5BF9;&#x8C61;&#x4E5F;&#x4E0D;&#x4F1A;&#x88AB;&#x62F7;&#x8D1D;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x800C;&#x662F;&#x88AB; <em>&#x94FE;&#x63A5;&#x5728;&#x4E00;&#x8D77;</em>&#xFF08;&#x8BE6;&#x89C1;&#x7B2C;&#x4E94;&#x7AE0;&#xFF09;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x5728;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x89C2;&#x5BDF;&#x5230;&#x7684;&#x7C7B;&#x7684;&#x884C;&#x4E3A;&#x610F;&#x5473;&#x7740;&#x62F7;&#x8D1D;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;JS&#x5F00;&#x53D1;&#x8005;&#x5982;&#x4F55;&#x5728;JavaScript&#x4E2D; <strong>&#x6A21;&#x62DF;</strong> &#x8FD9;&#x79CD; <em>&#x7F3A;&#x5931;</em> &#x7684;&#x7C7B;&#x7684;&#x62F7;&#x8D1D;&#x884C;&#x4E3A;&#xFF1A;mixins&#xFF08;&#x6DF7;&#x5408;&#xFF09;&#x3002;&#x6211;&#x4EEC;&#x4F1A;&#x770B;&#x5230;&#x4E24;&#x79CD;&#x201C;mixin&#x201D;&#xFF1A;<strong>&#x660E;&#x786E;&#x7684;&#xFF08;explicit&#xFF09;</strong> &#x548C; <strong>&#x9690;&#x542B;&#x7684;&#xFF08;implicit&#xFF09;</strong>&#x3002;</p>
+<h3 id="&#x660E;&#x786E;&#x7684;-mixin&#xFF08;explicit-mixins&#xFF09;">&#x660E;&#x786E;&#x7684; Mixin&#xFF08;Explicit Mixins&#xFF09;</h3>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x518D;&#x6B21;&#x56DE;&#x987E;&#x524D;&#x9762;&#x7684;<code>Vehicle</code>&#x548C;<code>Car</code>&#x7684;&#x4F8B;&#x5B50;&#x3002;&#x56E0;&#x4E3A;JavaScript&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x5C06;&#x884C;&#x4E3A;&#x4ECE;<code>Vehicle</code>&#x62F7;&#x8D1D;&#x5230;<code>Car</code>&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5EFA;&#x9020;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x6765;&#x624B;&#x52A8;&#x62F7;&#x8D1D;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x5DE5;&#x5177;&#x7ECF;&#x5E38;&#x88AB;&#x8BB8;&#x591A;&#x5305;/&#x6846;&#x67B6;&#x79F0;&#x4E3A;<code>extend(..)</code>&#xFF0C;&#x4F46;&#x4E3A;&#x4E86;&#x8BF4;&#x660E;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x91CC;&#x53EB;&#x5B83;<code>mixin(..)</code>&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5927;&#x5E45;&#x7B80;&#x5316;&#x7684;`mixin(..)`&#x793A;&#x4F8B;&#xFF1A;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mixin</span>(<span class="hljs-params"> sourceObj, targetObj </span>) </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> sourceObj) {
+        <span class="hljs-comment">// &#x4EC5;&#x62F7;&#x8D1D;&#x975E;&#x65E2;&#x5B58;&#x5185;&#x5BB9;</span>
+        <span class="hljs-keyword">if</span> (!(key <span class="hljs-keyword">in</span> targetObj)) {
+            targetObj[key] = sourceObj[key];
+        }
+    }
+
+    <span class="hljs-keyword">return</span> targetObj;
+}
+
+<span class="hljs-keyword">var</span> Vehicle = {
+    engines: <span class="hljs-number">1</span>,
+
+    ignition: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;Turning on my engine.&quot;</span> );
+    },
+
+    drive: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">this</span>.ignition();
+        <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;Steering and moving forward!&quot;</span> );
+    }
+};
+
+<span class="hljs-keyword">var</span> Car = mixin( Vehicle, {
+    wheels: <span class="hljs-number">4</span>,
+
+    drive: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        Vehicle.drive.call( <span class="hljs-keyword">this</span> );
+        <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;Rolling on all &quot;</span> + <span class="hljs-keyword">this</span>.wheels + <span class="hljs-string">&quot; wheels!&quot;</span> );
+    }
+} );
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x91CD;&#x8981;&#x7684;&#x7EC6;&#x8282;&#xFF1A;&#x6211;&#x4EEC;&#x8C08;&#x8BBA;&#x7684;&#x4E0D;&#x518D;&#x662F;&#x7C7B;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;JavaScript&#x4E2D;&#x6CA1;&#x6709;&#x7C7B;&#x3002;<code>Vehicle</code>&#x548C;<code>Car</code>&#x5206;&#x522B;&#x53EA;&#x662F;&#x6211;&#x4EEC;&#x5B9E;&#x65BD;&#x62F7;&#x8D1D;&#x7684;&#x6E90;&#x548C;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x3002;</p>
+<p><code>Car</code>&#x73B0;&#x5728;&#x62E5;&#x6709;&#x4E86;&#x4E00;&#x4EFD;&#x4ECE;<code>Vehicle</code>&#x5F97;&#x5230;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x51FD;&#x6570;&#x7684;&#x62F7;&#x8D1D;&#x3002;&#x6280;&#x672F;&#x4E0A;&#x8BB2;&#xFF0C;&#x51FD;&#x6570;&#x5B9E;&#x9645;&#x4E0A;&#x6CA1;&#x6709;&#x88AB;&#x590D;&#x5236;&#xFF0C;&#x800C;&#x662F;&#x6307;&#x5411;&#x51FD;&#x6570;&#x7684; <em>&#x5F15;&#x7528;</em> &#x88AB;&#x590D;&#x5236;&#x4E86;&#x3002;&#x6240;&#x4EE5;&#xFF0C;<code>Car</code>&#x73B0;&#x5728;&#x6709;&#x4E00;&#x4E2A;&#x79F0;&#x4E3A;<code>ignition</code>&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;<code>ignition()</code>&#x51FD;&#x6570;&#x5F15;&#x7528;&#x7684;&#x62F7;&#x8D1D;&#xFF1B;&#x800C;&#x4E14;&#x5B83;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x79F0;&#x4E3A;<code>engines</code>&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x6301;&#x6709;&#x4ECE;<code>Vehicle</code>&#x62F7;&#x8D1D;&#x6765;&#x7684;&#x503C;<code>1</code>&#x3002;</p>
+<p><code>Car</code><em>&#x5DF2;&#x7ECF;</em> &#x6709;&#x4E86;<code>drive</code>&#x5C5E;&#x6027;&#xFF08;&#x51FD;&#x6570;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x5F15;&#x7528;&#x6CA1;&#x6709;&#x88AB;&#x8986;&#x76D6;&#xFF08;&#x53C2;&#x89C1;&#x4E0A;&#x9762;<code>mixin(..)</code>&#x7684;<code>if</code>&#x8BED;&#x53E5;&#xFF09;&#x3002;</p>
+<h4 id="&#x91CD;&#x6E29;&#x591A;&#x6001;&#xFF08;polymorphism&#xFF09;">&#x91CD;&#x6E29;&quot;&#x591A;&#x6001;&#xFF08;Polymorphism&#xFF09;&quot;</h4>
+<p>&#x6211;&#x4EEC;&#x6765;&#x8003;&#x5BDF;&#x4E00;&#x4E0B;&#x8FD9;&#x4E2A;&#x8BED;&#x53E5;&#xFF1A;<code>Vehicle.drive.call( this )</code>&#x3002;&#x6211;&#x5C06;&#x4E4B;&#x79F0;&#x4E3A;&#x201C;&#x663E;&#x5F0F;&#x5047;&#x60F3;&#x591A;&#x6001;&#xFF08;explicit pseudo-polymorphism&#xFF09;&#x201D;&#x3002;&#x56DE;&#x60F3;&#x6211;&#x4EEC;&#x524D;&#x4E00;&#x6BB5;&#x5047;&#x60F3;&#x4EE3;&#x7801;&#x7684;&#x8FD9;&#x4E00;&#x884C;&#x662F;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x201C;&#x76F8;&#x5BF9;&#x591A;&#x6001;&#xFF08;relative polymorphism&#xFF09;&#x201D;&#x7684;<code>inherited:drive()</code>&#x3002;</p>
+<p>JavaScript&#x6CA1;&#x6709;&#x80FD;&#x529B;&#x5B9E;&#x73B0;&#x76F8;&#x5BF9;&#x591A;&#x6001;&#xFF08;ES6&#x4E4B;&#x524D;&#xFF0C;&#x89C1;&#x9644;&#x5F55;A&#xFF09;&#x3002;&#x6240;&#x4EE5;&#xFF0C;<strong>&#x56E0;&#x4E3A;<code>Car</code>&#x548C;<code>Vehicle</code>&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>drive()</code>&#x7684;&#x51FD;&#x6570;</strong>&#xFF0C;&#x4E3A;&#x4E86;&#x5728;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x533A;&#x522B;&#x8C03;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#xFF08;&#x4E0D;&#x662F;&#x76F8;&#x5BF9;&#xFF09;&#x5F15;&#x7528;&#x3002;&#x6211;&#x4EEC;&#x660E;&#x786E;&#x5730;&#x7528;&#x540D;&#x79F0;&#x6307;&#x51FA;<code>Vehicle</code>&#x5BF9;&#x8C61;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5B83;&#x4E0A;&#x9762;&#x8C03;&#x7528;<code>drive()</code>&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4F46;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8BF4;<code>Vehicle.drive()</code>&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;<code>this</code>&#x7ED1;&#x5B9A;&#x5C06;&#x4F1A;&#x662F;<code>Vehicle</code>&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x4E0D;&#x662F;<code>Car</code>&#x5BF9;&#x8C61;&#xFF08;&#x89C1;&#x7B2C;&#x4E8C;&#x7AE0;&#xFF09;&#xFF0C;&#x90A3;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;<code>.call( this )</code>&#xFF08;&#x89C1;&#x7B2C;&#x4E8C;&#x7AE0;&#xFF09;&#x6765;&#x4FDD;&#x8BC1;<code>drive()</code>&#x5728;<code>Car</code>&#x5BF9;&#x8C61;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#x88AB;&#x6267;&#x884C;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x5982;&#x679C;<code>Car.drive()</code>&#x7684;&#x51FD;&#x6570;&#x540D;&#x79F0;&#x6807;&#x8BC6;&#x7B26;&#x6CA1;&#x6709;&#x4E0E;<code>Vehicle.drive()</code>&#x7684;&#x91CD;&#x53E0;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x201C;&#x906E;&#x853D;&#x201D;&#xFF1B;&#x89C1;&#x7B2C;&#x4E94;&#x7AE0;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4E0D;&#x4F1A;&#x6709;&#x673A;&#x4F1A;&#x6F14;&#x793A;&#x201C;&#x65B9;&#x6CD5;&#x591A;&#x6001;&#xFF08;method polymorphism&#xFF09;&#x201D;&#x3002;&#x56E0;&#x4E3A;&#x90A3;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x4E00;&#x4E2A;&#x6307;&#x5411;<code>Vehicle.drive()</code>&#x7684;&#x5F15;&#x7528;&#x4F1A;&#x88AB;<code>mixin(..)</code>&#x8C03;&#x7528;&#x62F7;&#x8D1D;&#xFF0C;&#x800C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>this.drive()</code>&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x5B83;&#x3002;&#x88AB;&#x9009;&#x7528;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x91CD;&#x53E0; <strong>&#x906E;&#x853D;</strong> &#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x4EEC;&#x4E0D;&#x5F97;&#x4E0D;&#x4F7F;&#x7528;&#x66F4;&#x590D;&#x6742;&#x7684; <em>&#x663E;&#x5F0F;&#x5047;&#x60F3;&#x591A;&#x6001;&#xFF08;explicit pseudo-polymorphism&#xFF09;</em> &#x7684;&#x539F;&#x56E0;&#x3002;</p>
+<p>&#x5728;&#x62E5;&#x6709;&#x76F8;&#x5BF9;&#x591A;&#x6001;&#x7684;&#x9762;&#x5411;&#x7C7B;&#x7684;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;<code>Car</code>&#x548C;<code>Vehicle</code>&#x95F4;&#x7684;&#x8FDE;&#x63A5;&#x88AB;&#x5EFA;&#x7ACB;&#x4E00;&#x6B21;&#xFF0C;&#x5C31;&#x5728;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x9876;&#x7AEF;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;&#x7EF4;&#x62A4;&#x8FD9;&#x79CD;&#x5173;&#x7CFB;&#x7684;&#x552F;&#x4E00;&#x573A;&#x6240;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x7531;&#x4E8E;JavaScript&#x7684;&#x7279;&#x6B8A;&#x6027;&#xFF0C;&#x663E;&#x5F0F;&#x5047;&#x60F3;&#x591A;&#x6001;&#xFF08;&#x56E0;&#x4E3A;&#x906E;&#x853D;&#xFF01;&#xFF09; <strong>&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x4F60;&#x9700;&#x8981;&#x8FD9;&#x79CD;&#xFF08;&#x5047;&#x60F3;&#xFF09;&#x591A;&#x6001;&#x5F15;&#x7528;&#x7684;&#x51FD;&#x6570;&#x4E2D;</strong> &#x5EFA;&#x7ACB;&#x4E86;&#x4E00;&#x79CD;&#x8106;&#x5F31;&#x7684;&#x624B;&#x52A8;/&#x663E;&#x5F0F;&#x94FE;&#x63A5;&#x3002;&#x8FD9;&#x53EF;&#x80FD;&#x4F1A;&#x663E;&#x8457;&#x5730;&#x589E;&#x52A0;&#x7EF4;&#x62A4;&#x6210;&#x672C;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x867D;&#x7136;&#x663E;&#x5F0F;&#x5047;&#x60F3;&#x591A;&#x6001;&#x53EF;&#x4EE5;&#x6A21;&#x62DF;&#x201C;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x201D;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x4F46;&#x8FD9;&#x53EA;&#x4F1A;&#x589E;&#x52A0;&#x590D;&#x6742;&#x6027;&#x548C;&#x4EE3;&#x7801;&#x8106;&#x5F31;&#x6027;&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x7ED3;&#x679C;&#x901A;&#x5E38;&#x662F;&#x66F4;&#x52A0;&#x590D;&#x6742;&#xFF0C;&#x66F4;&#x96BE;&#x8BFB;&#x61C2;&#xFF0C;<em>&#x800C;&#x4E14;</em> &#x66F4;&#x96BE;&#x7EF4;&#x62A4;&#x7684;&#x4EE3;&#x7801;&#x3002;<strong>&#x5E94;&#x5F53;&#x5C3D;&#x53EF;&#x80FD;&#x5730;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x663E;&#x5F0F;&#x5047;&#x60F3;&#x591A;&#x6001;</strong>&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x5927;&#x90E8;&#x5206;&#x5C42;&#x9762;&#x4E0A;&#x5B83;&#x7684;&#x4EE3;&#x4EF7;&#x8981;&#x9AD8;&#x4E8E;&#x5229;&#x76CA;&#x3002;</p>
+<h4 id="&#x6DF7;&#x5408;&#x62F7;&#x8D1D;&#xFF08;mixing-copies&#xFF09;">&#x6DF7;&#x5408;&#x62F7;&#x8D1D;&#xFF08;Mixing Copies&#xFF09;</h4>
+<p>&#x56DE;&#x5FC6;&#x4E0A;&#x9762;&#x7684;<code>mixin(..)</code>&#x5DE5;&#x5177;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5927;&#x5E45;&#x7B80;&#x5316;&#x7684;`mixin()`&#x793A;&#x4F8B;:</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mixin</span>(<span class="hljs-params"> sourceObj, targetObj </span>) </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> sourceObj) {
+        <span class="hljs-comment">// &#x4EC5;&#x62F7;&#x8D1D;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5C5E;&#x6027;</span>
+        <span class="hljs-keyword">if</span> (!(key <span class="hljs-keyword">in</span> targetObj)) {
+            targetObj[key] = sourceObj[key];
+        }
+    }
+
+    <span class="hljs-keyword">return</span> targetObj;
+}
+</code></pre>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x8003;&#x5BDF;&#x4E00;&#x4E0B;<code>mixin(..)</code>&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x3002;&#x5B83;&#x8FED;&#x4EE3;<code>sourceObj</code>&#xFF08;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x662F;<code>Vehicle</code>&#xFF09;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x5728;<code>targetObj</code> (&#x5728;&#x6211;&#x4EEC;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x662F;<code>Car</code>)&#x4E2D;&#x6CA1;&#x6709;&#x540D;&#x79F0;&#x4E0E;&#x4E4B;&#x5339;&#x914D;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x5C31;&#x8FDB;&#x884C;&#x62F7;&#x8D1D;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x662F;&#x5728;&#x521D;&#x59CB;&#x5BF9;&#x8C61;&#x5B58;&#x5728;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x8FDB;&#x884C;&#x62F7;&#x8D1D;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8981;&#x5C0F;&#x5FC3;&#x4E0D;&#x8981;&#x5C06;&#x76EE;&#x6807;&#x5C5E;&#x6027;&#x8986;&#x76D6;&#x6389;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728;&#x6307;&#x660E;<code>Car</code>&#x7684;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x8FDB;&#x884C;&#x62F7;&#x8D1D;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x5BF9;<code>targetObj</code>&#x68C0;&#x67E5;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x505A;&#x6709;&#x4E9B;&#x7B28;&#x62D9;&#x4E14;&#x4F4E;&#x6548;&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x5E38;&#x4E0D;&#x4F18;&#x5148;&#x9009;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x53E6;&#x4E00;&#x79CD;mixin&#xFF0C;&#x5BF9;&#x8986;&#x76D6;&#x4E0D;&#x592A;&#x201C;&#x5B89;&#x5168;&#x201D;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mixin</span>(<span class="hljs-params"> sourceObj, targetObj </span>) </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> sourceObj) {
+        targetObj[key] = sourceObj[key];
+    }
+
+    <span class="hljs-keyword">return</span> targetObj;
+}
+
+<span class="hljs-keyword">var</span> Vehicle = {
+    <span class="hljs-comment">// ...</span>
+};
+
+<span class="hljs-comment">// &#x9996;&#x5148;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x5BF9;&#x8C61;</span>
+<span class="hljs-comment">// &#x5C06;Vehicle&#x7684;&#x5185;&#x5BB9;&#x62F7;&#x8D1D;&#x8FDB;&#x53BB;</span>
+<span class="hljs-keyword">var</span> Car = mixin( Vehicle, { } );
+
+<span class="hljs-comment">// &#x73B0;&#x5728;&#x62F7;&#x8D1D;Car&#x7684;&#x5177;&#x4F53;&#x5185;&#x5BB9;</span>
+mixin( {
+    wheels: <span class="hljs-number">4</span>,
+
+    drive: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// ...</span>
+    }
+}, Car );
+</code></pre>
+<p>&#x4E0D;&#x8BBA;&#x54EA;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x663E;&#x5F0F;&#x5730;&#x5C06;<code>Vehicle</code>&#x4E2D;&#x7684;&#x975E;&#x91CD;&#x53E0;&#x5185;&#x5BB9;&#x62F7;&#x8D1D;&#x5230;<code>Car</code>&#x4E2D;&#x3002;&#x201C;mixin&#x201D;&#x8FD9;&#x4E2A;&#x540D;&#x79F0;&#x6765;&#x81EA;&#x4E8E;&#x89E3;&#x91CA;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#xFF1A;<code>Car</code><strong>&#x6DF7;&#x5165;</strong><code>Vehicle</code>&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5C31;&#x50CF;&#x4F60;&#x5427;&#x5DE7;&#x514B;&#x529B;&#x788E;&#x7247;&#x6DF7;&#x5165;&#x4F60;&#x6700;&#x559C;&#x6B22;&#x7684;&#x66F2;&#x5947;&#x997C;&#x9762;&#x56E2;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x62F7;&#x8D1D;&#x64CD;&#x4F5C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x662F;<code>Car</code>&#x5C06;&#x4F1A;&#x72EC;&#x7ACB;&#x4E8E;<code>Vehicle</code>&#x8FD0;&#x884C;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728;<code>Car</code>&#x4E0A;&#x6DFB;&#x52A0;&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5230;<code>Vehicle</code>&#xFF0C;&#x53CD;&#x4E4B;&#x4EA6;&#x7136;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x8FD9;&#x91CC;&#x6709;&#x51E0;&#x4E2A;&#x5C0F;&#x7EC6;&#x8282;&#x88AB;&#x5FFD;&#x7565;&#x4E86;&#x3002;&#x4ECD;&#x7136;&#x6709;&#x4E00;&#x4E9B;&#x5FAE;&#x5999;&#x7684;&#x65B9;&#x6CD5;&#x4F7F;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x5728;&#x62F7;&#x8D1D;&#x5B8C;&#x6210;&#x540E;&#x8FD8;&#x80FD;&#x4E92;&#x76F8;&#x201C;&#x5F71;&#x54CD;&#x201D;&#x5BF9;&#x65B9;&#xFF0C;&#x6BD4;&#x5982;&#x4ED6;&#x4EEC;&#x5171;&#x4EAB;&#x4E00;&#x4E2A;&#x5171;&#x901A;&#x5BF9;&#x8C61;&#xFF08;&#x6BD4;&#x5982;&#x6570;&#x7EC4;&#xFF09;&#x7684;&#x5F15;&#x7528;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x8FD8;&#x5171;&#x4EAB;&#x5B83;&#x4EEC;&#x7684;&#x5171;&#x901A;&#x51FD;&#x6570;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740; <strong>&#x5373;&#x4FBF;&#x624B;&#x52A8;&#x5C06;&#x51FD;&#x6570;&#x4ECE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x62F7;&#x8D1D;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x6DF7;&#x5165;&#xFF09;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD; <em>&#x5B9E;&#x9645;&#x4E0A;&#x6A21;&#x62DF;</em> &#x53D1;&#x751F;&#x5728;&#x9762;&#x5411;&#x7C7B;&#x7684;&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x4ECE;&#x7C7B;&#x5230;&#x5B9E;&#x4F8B;&#x7684;&#x771F;&#x6B63;&#x7684;&#x590D;&#x5236;</strong>&#x3002;</p>
+<p>JavaScript&#x51FD;&#x6570;&#x4E0D;&#x80FD;&#x771F;&#x6B63;&#x610F;&#x4E49;&#x4E0A;&#x5730;&#x88AB;&#x590D;&#x5236;&#xFF08;&#x4EE5;&#x6807;&#x51C6;&#xFF0C;&#x53EF;&#x9760;&#x7684;&#x65B9;&#x5F0F;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x6700;&#x7EC8;&#x5F97;&#x5230;&#x7684;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5171;&#x4EAB;&#x7684;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;&#x51FD;&#x6570;&#x662F;&#x5BF9;&#x8C61;&#xFF1B;&#x89C1;&#x7B2C;&#x4E09;&#x7AE0;&#xFF09;&#x7684; <strong>&#x88AB;&#x590D;&#x5236;&#x7684;&#x5F15;&#x7528;</strong>&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5728;&#x4E00;&#x4E2A;&#x5171;&#x4EAB;&#x7684;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;&#x6BD4;&#x5982;<code>ignition()</code>&#xFF09;&#x4E0A;&#x6DFB;&#x52A0;&#x5C5E;&#x6027;&#x6765;&#x4FEE;&#x6539;&#x5B83;&#xFF0C;<code>Vehicle</code>&#x548C;<code>Car</code>&#x90FD;&#x4F1A;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x5171;&#x4EAB;&#x7684;&#x5F15;&#x7528;&#x800C;&#x53D7;&#x5F71;&#x54CD;&#x3002;</p>
+<p>&#x5728;JavaScript&#x4E2D;&#x660E;&#x786E;&#x7684;mixin&#x662F;&#x4E00;&#x79CD;&#x4E0D;&#x9519;&#x7684;&#x673A;&#x5236;&#x3002;&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x663E;&#x5F97;&#x8A00;&#x8FC7;&#x5176;&#x5B9E;&#x3002;<strong>&#x548C;&#x5C06;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x4E24;&#x6B21;&#x76F8;&#x6BD4;</strong>&#xFF0C;&#x5C06;&#x5C5E;&#x6027;&#x4ECE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x62F7;&#x8D1D;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5E76;&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x591A;&#x5C11; <em>&#x5B9E;&#x9645;&#x7684;</em> &#x597D;&#x5904;&#x3002;&#x8FD9;&#x5BF9;&#x6211;&#x4EEC;&#x521A;&#x624D;&#x63D0;&#x5230;&#x7684;&#x7ED9;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x589E;&#x52A0;&#x7684;&#x5FAE;&#x5999;&#x53D8;&#x5316;&#x6765;&#x8BF4;&#xFF0C;&#x663E;&#x5F97;&#x5C24;&#x4E3A;&#x6B63;&#x786E;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x660E;&#x786E;&#x5730;&#x5C06;&#x4E24;&#x4E2A;&#x6216;&#x66F4;&#x591A;&#x5BF9;&#x8C61;&#x6DF7;&#x5165;&#x4F60;&#x7684;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5; <strong>&#x67D0;&#x79CD;&#x7A0B;&#x5EA6;&#x4E0A;&#x6A21;&#x62DF;</strong> &#x201C;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x201D;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x5C06;&#x65B9;&#x6CD5;&#x6216;&#x5C5E;&#x6027;&#x4ECE;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#x6E90;&#x5BF9;&#x8C61;&#x90A3;&#x91CC;&#x62F7;&#x8D1D;&#x8FC7;&#x6765;&#x65F6;&#xFF0C;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x7684;&#x529E;&#x6CD5;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x540D;&#x79F0;&#x7684;&#x51B2;&#x7A81;&#x3002;&#x6709;&#x4E9B;&#x5F00;&#x53D1;&#x8005;/&#x5305;&#x4F7F;&#x7528;&#x201C;late binding&#xFF08;&#x5EF6;&#x8FDF;&#x7ED1;&#x5B9A;&#xFF09;&#x201D;&#x548C;&#x5176;&#x4ED6;&#x8BE1;&#x5F02;&#x7684;&#x66FF;&#x4EE3;&#x65B9;&#x6CD5;&#x6765;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x4ECE;&#x6839;&#x672C;&#x4E0A;&#x8BB2;&#xFF0C;&#x8FD9;&#x4E9B;&#x201C;&#x6280;&#x5DE7;&#x201D; <em>&#x901A;&#x5E38;</em> &#x5F97;&#x4E0D;&#x507F;&#x5931;&#xFF08;&#x800C;&#x4E14;&#x4F4E;&#x6548;&#xFF01;&#xFF09;&#x3002;</p>
+<p>&#x8981;&#x5C0F;&#x5FC3;&#x7684;&#x662F;&#xFF0C;&#x4EC5;&#x5728;&#x660E;&#x786E;&#x7684;mixin&#x80FD;&#x591F;&#x5B9E;&#x9645;&#x63D0;&#x9AD8;&#x4EE3;&#x7801;&#x53EF;&#x8BFB;&#x6027;&#x65F6;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x800C;&#x5982;&#x679C;&#x4F60;&#x53D1;&#x73B0;&#x5B83;&#x4F7F;&#x4EE3;&#x7801;&#x53D8;&#x5F97;&#x66F4;&#x5F88;&#x96BE;&#x8FFD;&#x6EAF;&#xFF0C;&#x6216;&#x5728;&#x5BF9;&#x8C61;&#x95F4;&#x5EFA;&#x7ACB;&#x4E86;&#x4E0D;&#x5FC5;&#x8981;&#x6216;&#x7B28;&#x91CD;&#x7684;&#x4F9D;&#x8D56;&#x6027;&#x65F6;&#xFF0C;&#x8981;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x3002;</p>
+<p><strong>&#x5982;&#x679C;&#x6B63;&#x786E;&#x4F7F;&#x7528;mixin&#x4F7F;&#x4F60;&#x7684;&#x95EE;&#x9898;&#x53D8;&#x5F97;&#x6BD4;&#x4EE5;&#x524D; <em>&#x56F0;&#x96BE;</em></strong>&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x80FD;&#x5E94;&#x5F53;&#x505C;&#x6B62;&#x4F7F;&#x7528;mixin&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x5F97;&#x4E0D;&#x4F7F;&#x7528;&#x590D;&#x6742;&#x7684;&#x5305;/&#x5DE5;&#x5177;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x4E9B;&#x7EC6;&#x8282;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x6807;&#x5FD7;&#x7740;&#x4F60;&#x6B63;&#x8D70;&#x5728;&#x66F4;&#x56F0;&#x96BE;&#xFF0C;&#x4E5F;&#x8BB8;&#x6CA1;&#x5FC5;&#x8981;&#x7684;&#x9053;&#x8DEF;&#x4E0A;&#x3002;&#x5728;&#x7B2C;&#x516D;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8BD5;&#x7740;&#x63D0;&#x53D6;&#x4E00;&#x79CD;&#x66F4;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x6211;&#x4EEC;&#x671F;&#x671B;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x540C;&#x65F6;&#x514D;&#x53BB;&#x8FD9;&#x4E9B;&#x5468;&#x6298;&#x3002;</p>
+<h4 id="&#x5BC4;&#x751F;&#x7EE7;&#x627F;&#xFF08;parasitic-inheritance&#xFF09;">&#x5BC4;&#x751F;&#x7EE7;&#x627F;&#xFF08;Parasitic Inheritance&#xFF09;</h4>
+<p>&#x660E;&#x786E;&#x7684;mixin&#x6A21;&#x5F0F;&#x7684;&#x4E00;&#x4E2A;&#x53D8;&#x79CD;&#xFF0C;&#x5728;&#x67D0;&#x79CD;&#x610F;&#x4E49;&#x4E0A;&#x662F;&#x660E;&#x786E;&#x7684;&#x800C;&#x5728;&#x67D0;&#x79CD;&#x610F;&#x4E49;&#x4E0A;&#x662F;&#x9690;&#x542B;&#x7684;&#xFF0C;&#x79F0;&#x4E3A;&#x201C;&#x5BC4;&#x751F;&#x7EE7;&#x627F;&#xFF08;Parasitic Inheritance&#xFF09;&#x201D;&#xFF0C;&#x5B83;&#x4E3B;&#x8981;&#x662F;&#x7531;Douglas Crockford&#x63A8;&#x5E7F;&#x7684;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x5B83;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x201C;&#x4F20;&#x7EDF;&#x7684;JS&#x7C7B;&#x201D; `Vehicle`</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Vehicle</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.engines = <span class="hljs-number">1</span>;
+}
+Vehicle.prototype.ignition = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;Turning on my engine.&quot;</span> );
+};
+Vehicle.prototype.drive = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.ignition();
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;Steering and moving forward!&quot;</span> );
+};
+
+<span class="hljs-comment">// &#x201C;&#x5BC4;&#x751F;&#x7C7B;&#x201D; `Car`</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Car</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// &#x9996;&#x5148;, `car`&#x662F;&#x4E00;&#x4E2A;`Vehicle`</span>
+    <span class="hljs-keyword">var</span> car = <span class="hljs-keyword">new</span> Vehicle();
+
+    <span class="hljs-comment">// &#x73B0;&#x5728;, &#x6211;&#x4EEC;&#x4FEE;&#x6539;`car`&#x4F7F;&#x5B83;&#x7279;&#x5316;</span>
+    car.wheels = <span class="hljs-number">4</span>;
+
+    <span class="hljs-comment">// &#x4FDD;&#x5B58;&#x4E00;&#x4E2A;`Vehicle::drive()`&#x7684;&#x5F15;&#x7528;</span>
+    <span class="hljs-keyword">var</span> vehDrive = car.drive;
+
+    <span class="hljs-comment">// &#x8986;&#x76D6; `Vehicle::drive()`</span>
+    car.drive = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        vehDrive.call( <span class="hljs-keyword">this</span> );
+        <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;Rolling on all &quot;</span> + <span class="hljs-keyword">this</span>.wheels + <span class="hljs-string">&quot; wheels!&quot;</span> );
+    };
+
+    <span class="hljs-keyword">return</span> car;
+}
+
+<span class="hljs-keyword">var</span> myCar = <span class="hljs-keyword">new</span> Car();
+
+myCar.drive();
+<span class="hljs-comment">// Turning on my engine.</span>
+<span class="hljs-comment">// Steering and moving forward!</span>
+<span class="hljs-comment">// Rolling on all 4 wheels!</span>
+</code></pre>
+<p>&#x5982;&#x4F60;&#x6240;&#x89C1;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x5F00;&#x59CB;&#x4ECE;&#x201C;&#x7236;&#x7C7B;&#x201D;&#xFF08;&#x5BF9;&#x8C61;&#xFF09;<code>Vehicle</code>&#x5236;&#x9020;&#x4E86;&#x4E00;&#x4E2A;&#x5B9A;&#x4E49;&#x7684;&#x62F7;&#x8D1D;&#xFF0C;&#x4E4B;&#x540E;&#x5C06;&#x6211;&#x4EEC;&#x7684;&#x201C;&#x5B50;&#x7C7B;&#x201D;&#xFF08;&#x5BF9;&#x8C61;&#xFF09;&#x5B9A;&#x4E49;&#x6DF7;&#x5165;&#x5176;&#x4E2D;&#xFF08;&#x6309;&#x7167;&#x9700;&#x8981;&#x4FDD;&#x7559;&#x7236;&#x7C7B;&#x7684;&#x5F15;&#x7528;&#xFF09;&#xFF0C;&#x6700;&#x540E;&#x5C06;&#x7EC4;&#x5408;&#x597D;&#x7684;&#x5BF9;&#x8C61;<code>car</code>&#x4F5C;&#x4E3A;&#x5B50;&#x7C7B;&#x5B9E;&#x4F8B;&#x4F20;&#x9012;&#x51FA;&#x53BB;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x5F53;&#x6211;&#x4EEC;&#x8C03;&#x7528;<code>new Car()</code>&#x65F6;&#xFF0C;&#x4E00;&#x4E2A;&#x65B0;&#x5BF9;&#x8C61;&#x88AB;&#x521B;&#x5EFA;&#x5E76;&#x88AB;<code>Car</code>&#x7684;<code>this</code>&#x6240;&#x5F15;&#x7528;&#xFF08;&#x89C1;&#x7B2C;&#x4E8C;&#x7AE0;&#xFF09;&#x3002;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x662F;&#x8FD4;&#x56DE;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;<code>car</code>&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x521D;&#x59CB;&#x5316;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x5C31;&#x88AB;&#x4E22;&#x5F03;&#x4E86;&#x3002;&#x6240;&#x4EE5;&#xFF0C;<code>Car()</code>&#x53EF;&#x4EE5;&#x4E0D;&#x7528;<code>new</code>&#x5173;&#x952E;&#x5B57;&#x8C03;&#x7528;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x548C;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x76F8;&#x540C;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x4E14;&#x8FD8;&#x53EF;&#x4EE5;&#x8282;&#x7701;&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#x548C;&#x56DE;&#x6536;&#x3002;</p>
+<h3 id="&#x9690;&#x542B;&#x7684;-mixin&#xFF08;implicit-mixins&#xFF09;">&#x9690;&#x542B;&#x7684; Mixin&#xFF08;Implicit Mixins&#xFF09;</h3>
+<p>&#x9690;&#x542B;&#x7684;mixin&#x548C;&#x524D;&#x9762;&#x89E3;&#x91CA;&#x7684; <em>&#x663E;&#x5F0F;&#x5047;&#x60F3;&#x591A;&#x6001;</em> &#x662F;&#x7D27;&#x5BC6;&#x76F8;&#x5173;&#x7684;&#x3002;&#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x76F8;&#x540C;&#x7684;&#x4E8B;&#x9879;&#x3002;</p>
+<p>&#x8003;&#x8651;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> Something = {
+    cool: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">this</span>.greeting = <span class="hljs-string">&quot;Hello World&quot;</span>;
+        <span class="hljs-keyword">this</span>.count = <span class="hljs-keyword">this</span>.count ? <span class="hljs-keyword">this</span>.count + <span class="hljs-number">1</span> : <span class="hljs-number">1</span>;
+    }
+};
+
+Something.cool();
+Something.greeting; <span class="hljs-comment">// &quot;Hello World&quot;</span>
+Something.count; <span class="hljs-comment">// 1</span>
+
+<span class="hljs-keyword">var</span> Another = {
+    cool: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// &#x9690;&#x5F0F;&#x5730;&#x5C06;`Something`&#x6DF7;&#x5165;`Another`</span>
+        Something.cool.call( <span class="hljs-keyword">this</span> );
+    }
+};
+
+Another.cool();
+Another.greeting; <span class="hljs-comment">// &quot;Hello World&quot;</span>
+Another.count; <span class="hljs-comment">// 1 (&#x4E0D;&#x4F1A;&#x548C;`Something`&#x5171;&#x4EAB;&#x72B6;&#x6001;)</span>
+</code></pre>
+<p><code>Something.cool.call( this )</code>&#x65E2;&#x53EF;&#x4EE5;&#x5728;&#x201C;&#x6784;&#x9020;&#x5668;&#x201D;&#x8C03;&#x7528;&#x4E2D;&#x4F7F;&#x7528;&#xFF08;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x60C5;&#x51B5;&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x4E2D;&#x4F7F;&#x7528;&#xFF08;&#x5982;&#x8FD9;&#x91CC;&#x6240;&#x793A;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x5B9E;&#x8D28;&#x4E0A;&#x201C;&#x501F;&#x7528;&#x201D;&#x4E86;<code>Something.cool()</code>&#x51FD;&#x6570;&#x5E76;&#x5728;<code>Another</code>&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x800C;&#x975E;<code>Something</code>&#x73AF;&#x5883;&#x4E0B;&#x8C03;&#x7528;&#x5B83;&#xFF08;&#x901A;&#x8FC7;<code>this</code>&#x7ED1;&#x5B9A;&#xFF0C;&#x89C1;&#x7B2C;&#x4E8C;&#x7AE0;&#xFF09;&#x3002;&#x7ED3;&#x679C;&#x662F;&#xFF0C;<code>Something.cool()</code>&#x4E2D;&#x8FDB;&#x884C;&#x7684;&#x8D4B;&#x503C;&#x88AB;&#x5B9E;&#x65BD;&#x5230;&#x4E86;<code>Another</code>&#x5BF9;&#x8C61;&#x800C;&#x975E;<code>Something</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x8BF4;&#x6211;&#x4EEC;&#x5C06;<code>Something</code>&#x7684;&#x884C;&#x4E3A;&#x201C;&#x6DF7;&#x5165;&#x201D;&#x4E86;<code>Another</code>&#x3002;</p>
+<p>&#x867D;&#x7136;&#x8FD9;&#x79CD;&#x6280;&#x672F;&#x770B;&#x8D77;&#x6765;&#x6709;&#x6548;&#x5229;&#x7528;&#x4E86;<code>this</code>&#x518D;&#x7ED1;&#x5B9A;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x751F;&#x786C;&#x5730;&#x8C03;&#x7528;<code>Something.cool.call( this )</code>&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x79CD;&#x8C03;&#x7528;&#x4E0D;&#x80FD;&#x88AB;&#x4F5C;&#x4E3A;&#x76F8;&#x5BF9;&#xFF08;&#x4E5F;&#x66F4;&#x7075;&#x6D3B;&#x7684;&#xFF09;&#x5F15;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x5E94;&#x5F53; <strong>&#x63D0;&#x9AD8;&#x8B66;&#x60D5;</strong>&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;<strong>&#x5C3D;&#x91CF;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x7ED3;&#x6784;</strong> &#x6765;&#x4FDD;&#x6301;&#x4EE3;&#x7801;&#x5E72;&#x51C0;&#x800C;&#x4E14;&#x5BB9;&#x6613;&#x7EF4;&#x62A4;&#x3002;</p>
+<h2 id="&#x590D;&#x4E60;">&#x590D;&#x4E60;</h2>
+<p>&#x7C7B;&#x662F;&#x4E00;&#x79CD;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x3002;&#x8BB8;&#x591A;&#x8BED;&#x8A00;&#x63D0;&#x4F9B;&#x8BED;&#x6CD5;&#x6765;&#x542F;&#x7528;&#x81EA;&#x7136;&#x800C;&#x7136;&#x7684;&#x9762;&#x5411;&#x7C7B;&#x7684;&#x8F6F;&#x4EF6;&#x8BBE;&#x8BA1;&#x3002;JS&#x4E5F;&#x6709;&#x76F8;&#x4F3C;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x7684;&#x884C;&#x4E3A;&#x548C;&#x4F60;&#x5728;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x719F;&#x6089;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406; <strong>&#x6709;&#x5F88;&#x5927;&#x7684;&#x4E0D;&#x540C;</strong>&#x3002;</p>
+<p><strong>&#x7C7B;&#x610F;&#x5473;&#x7740;&#x62F7;&#x8D1D;&#x3002;</strong></p>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x4F20;&#x7EDF;&#x7684;&#x7C7B;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x65F6;&#xFF0C;&#x5C31;&#x53D1;&#x751F;&#x4E86;&#x7C7B;&#x7684;&#x884C;&#x4E3A;&#x5411;&#x5B9E;&#x4F8B;&#x4E2D;&#x62F7;&#x8D1D;&#x3002;&#x5F53;&#x7C7B;&#x88AB;&#x7EE7;&#x627F;&#x65F6;&#xFF0C;&#x4E5F;&#x53D1;&#x751F;&#x7236;&#x7C7B;&#x7684;&#x884C;&#x4E3A;&#x5411;&#x5B50;&#x7C7B;&#x7684;&#x62F7;&#x8D1D;&#x3002;</p>
+<p>&#x591A;&#x6001;&#xFF08;&#x5728;&#x7EE7;&#x627F;&#x94FE;&#x7684;&#x4E0D;&#x540C;&#x5C42;&#x7EA7;&#x4E0A;&#x62E5;&#x6709;&#x540C;&#x540D;&#x7684;&#x4E0D;&#x540C;&#x51FD;&#x6570;&#xFF09;&#x4E5F;&#x8BB8;&#x770B;&#x8D77;&#x6765;&#x610F;&#x5473;&#x7740;&#x4E00;&#x4E2A;&#x4ECE;&#x5B50;&#x7C7B;&#x56DE;&#x5230;&#x7236;&#x7C7B;&#x7684;&#x76F8;&#x5BF9;&#x5F15;&#x7528;&#x94FE;&#x63A5;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4ECD;&#x7136;&#x53EA;&#x662F;&#x62F7;&#x8D1D;&#x884C;&#x7684;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>JavaScript <strong>&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x5730;</strong> &#xFF08;&#x50CF;&#x7C7B;&#x90A3;&#x6837;&#xFF09;&#x5728;&#x5BF9;&#x8C61;&#x95F4;&#x521B;&#x5EFA;&#x62F7;&#x8D1D;&#x3002;</p>
+<p>mixin&#x6A21;&#x5F0F;&#x5E38;&#x7528;&#x4E8E;&#x5728; <em>&#x67D0;&#x79CD;&#x7A0B;&#x5EA6;&#x4E0A;</em> &#x6A21;&#x62DF;&#x7C7B;&#x7684;&#x62F7;&#x8D1D;&#x884C;&#x4E3A;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x901A;&#x5E38;&#x5BFC;&#x81F4;&#x50CF;&#x663E;&#x5F0F;&#x5047;&#x60F3;&#x591A;&#x6001;&#x90A3;&#x6837;(<code>OtherObj.methodName.call(this, ...)</code>)&#x96BE;&#x770B;&#x800C;&#x4E14;&#x8106;&#x5F31;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x8BED;&#x6CD5;&#x53C8;&#x5E38;&#x5BFC;&#x81F4;&#x66F4;&#x96BE;&#x61C2;&#x548C;&#x66F4;&#x96BE;&#x7EF4;&#x62A4;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x660E;&#x786E;&#x7684;mixin&#x548C;&#x7C7B; <em>&#x62F7;&#x8D1D;</em> &#x53C8;&#x4E0D;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF0C;&#x56E0;&#x4E3A;&#x5BF9;&#x8C61;&#xFF08;&#x548C;&#x51FD;&#x6570;&#xFF01;&#xFF09;&#x4EC5;&#x4EC5;&#x662F;&#x5171;&#x4EAB;&#x7684;&#x5F15;&#x7528;&#x88AB;&#x590D;&#x5236;&#xFF0C;&#x4E0D;&#x662F;&#x5BF9;&#x8C61;/&#x51FD;&#x6570;&#x81EA;&#x8EAB;&#x88AB;&#x590D;&#x5236;&#x3002;&#x4E0D;&#x6CE8;&#x610F;&#x8FD9;&#x6837;&#x7684;&#x5FAE;&#x5C0F;&#x4E4B;&#x5904;&#x901A;&#x5E38;&#x662F;&#x5404;&#x79CD;&#x9677;&#x9631;&#x7684;&#x6839;&#x6E90;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BB2;&#xFF0C;&#x5728;JS&#x4E2D;&#x6A21;&#x62DF;&#x7C7B;&#x901A;&#x5E38;&#x4F1A;&#x6BD4;&#x89E3;&#x51B3;&#x5F53;&#x524D; <em>&#x771F;&#x6B63;</em> &#x7684;&#x95EE;&#x9898;&#x57CB;&#x4E0B;&#x66F4;&#x591A;&#x7684;&#x5751;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch3.html" class="navigation navigation-prev " aria-label="Previous page: 第三章: 对象">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch5.html" class="navigation navigation-next " aria-label="Next page: 第五章: 原型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第四章: 混合（淆）“类”的对象","level":"1.5.6","depth":2,"next":{"title":"第五章: 原型","level":"1.5.7","depth":2,"path":"this/ch5.md","ref":"this/ch5.md","articles":[]},"previous":{"title":"第三章: 对象","level":"1.5.5","depth":2,"path":"this/ch3.md","ref":"this/ch3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"this/ch4.md","mtime":"2017-04-06T10:18:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T03:02:39.575Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
